@@ -1,6 +1,7 @@
-# stt0408
+# STT0408
+Fundamentos de Engenharia de Transportes
 Fundamentals of Transportation Engineering
 
 ***prof. André Luiz Cunha***
 
-Apostila online da disciplina STT0408 Fundamentos de Engenharia de Transportes.
+***prof. José Reynaldo Setti***
