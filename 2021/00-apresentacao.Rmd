@@ -1,12 +1,11 @@
 ---
 title: "Apresentação do curso"
-subtitle: "STT0408 - Fundamentos de Engenharia de Transportes"
-author: 
-  name: "Prof. André Luiz Cunha"
-  affiliation: "USP-EESC-STT"
-
-#date: "4/7/2021"
-output: 
+author:
+  name: Prof. André Luiz Cunha
+  affiliation: USP-EESC-STT
+subtitle: STT0408 - Fundamentos de Engenharia de Transportes
+output:
+  pdf_document: default
   html_document:
     theme: simplex
     highlight: textmate
