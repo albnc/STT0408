@@ -1,89 +1,122 @@
 ---
 title: "Apresentação do curso"
 author:
-  name: Prof. André Luiz Cunha
+  name: Profs. Setti & André
   affiliation: USP-EESC-STT
 subtitle: STT0408 - Fundamentos de Engenharia de Transportes
 output:
-  pdf_document: default
   html_document:
-    theme: simplex
-    highlight: textmate
+    toc: TRUE
+    toc_depth: 2
+    number_sections: TRUE
+    theme: united
+    highlight: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+ 
+# Programa
+Os objetivos da disciplina são: (1) caracterizar os componentes dos sistemas de transporte; (2) discutir os conceitos básicos da locomoção veicular para entender como o desempenho dos veículos influencia o projeto e a operação de sistemas de transporte; (3) introduzir os conceitos básicos sobre fluxo de veículos, seu controle e capacidade viária, procurando mostrar como esses fatores determinam o projeto e operação do sistema de transporte; (4) aprender a trabalhar em equipe para desenvolver projetos de engenharia; e (5) criar e usar software para resolver problemas de engenharia.
 
-## 1. Programa Resumido
+O programa resumido consiste dos seguintes tópicos:
 
-- Sistema de transporte
-- Locomoção de trens
-- Locomoção de caminhões
+- Os sistemas de transporte: componentes, organização e importância econômica
+- Locomoção de veículos ferroviários
+- Locomoção de veículos rodoviários
 - Fluxo de veículos e seu controle
 - Capacidade viária
-- Fluxo de veículos em cruzamento de vias
+- Fluxo de veículos em cruzamentos de vias
+
+Você pode contactar os professores pelos e-mails <jrasetti@usp.br> (Prof. Setti) e <alcunha@usp.br> (Prof.
+André) ou por mensagens pelo Google Classroom app.
+
+Para uma cópia deste documento, verificar suas notas, obter instruções para o projeto, fazer download das listas de exercícios e entregar os relatórios dos projetos e os exercícios resolvidos, você deverá usar o **Google Classroom**, que pode ser acessado de qualquer dispositivo ligado à internet, incluindo smartphones. Além do material usado na disciplina, o Classroom permite ao aluno ver suas notas e entregar trabalhos.
+
+O convite para participar da disciplina foi enviado a sua conta <userid@usp.br>. Apenas os alunos com e-mail no domínio USP poderão se inscrever no Classroom.
 
 
-### 1.1 Avaliação do Aprendizado
+# Avaliação do Aprendizado
 
-- Duas provas regulares
+Como o ensino neste semestre não será presencial, a avaliação ficou assim definida:
+
 - Listas de exercícios
+- Atividades avaliativas
 - Projeto de curso
-- Prova substitutiva: *toda a matéria*
-
-
-### 1.2 Projeto de Curso
-
-- Aplicação na prática dos conceitos aprendidos
-- Até 2 pessoas
-- *Relatórios parciais* em datas preestabelecidas
-- *Relatório final* com revisão dos relatórios parciais
-
-$$NF_{proj} = \frac{\sum NP_{relatorio}}{n}$$
-
-
-### 1.3 Cálculo da Média Final
-
-A média final é calculada pela seguinte equação e os coeficientes são dados a seguir.
-
-$$ MF = \alpha \cdot \beta \cdot (0,5 \cdot MP + 0,5 \cdot NF_{proj}) $$
-
-| Condição | $\alpha$ |
-|---|---|
-| $NF_{proj} < 5,0$| 0,0 |
-| $MP < 3,0$| 0,0  |
-| $N.Provas < 2$| 0,0 |
-| $NF_{proj} \geq 5,0$| 1,0 |
-
-
-| Listas entregues (N) | $\beta$ |
-|---|---|
-| $0\% \leq NL \lt 20\%$| 1,00 |
-| $20\% \leq NL \lt 40\%$| 1,01 |
-| $40\% \leq NL \lt 60\%$| 1,02 |
-| $60\% \leq NL \lt 80\%$| 1,03 |
-| $80\% \leq NL \lt 100\%$| 1,04 |
-| $NL = 100\%$| 1,05 |
 
 
 
-## 2. Datas Importantes
+## Listas de exercícios
 
-|Provas|
-|------|
-|30 abril|
-|18 junho|
-|03 julho [subst]|
+A entrega das listas de exercício é **obrigatória** e deverá ser feita através do Google Classroom; listas não
+entregues terão nota zero. A nota da lista terá uma penalização de 1 ponto/dia de atraso na entrega. A média aritmética das notas da listas de exercício, $ML$, será usada no cálculo da nota final.
+
+## Atividades Avaliativas
+
+Periodicamente, em aulas de exercícios, os alunos receberão atividades avaliativas (problemas, testes etc.) para serem resolvidos durante ou imediatamente após a aula. A solução e entrega dessas atividades avaliativas é facultativa; no entanto, os alunos que as completarem poderão ter um aumento de até 5% na nota final da disciplina, através de um fator $\beta$. Os vistos serão apostos no final da aula ou do prazo estabelecido para a entrega da atividade.
 
 
-## 3. Monitores PAE
+## Projeto de Curso
+
+**Prazo para entrega do projeto completo: 5 de julho, impreterivelmente.**
+
+O projeto de curso deverá ser desenvolvido ao longo do semestre. Em datas preestabelecidas, deverão ser entregues relatórios parciais, cobrindo aspectos do projeto. Os relatórios parciais receberão notas que serão usadas no cálculo da nota final do projeto. A nota final do projeto $NF_{\text{proj}}$ entrará no cálculo da média final. Os projetos deverão ser feitos em grupos de dois alunos.
+
+Ao final do semestre, o relatório completo do projeto, com as devidas correções apontadas nos relatórios parciais, deverá ser entregue para a obtenção da nota final do projeto. O projeto que não tiver todos as notas dos relatórios parciais será considerado não entregue. Aos projetos que não forem entregues, será atribuída nota zero. Relatórios parciais entregues fora do prazo combinado terão redução significativa na nota, em função do atraso na entrega.
+
+## Critério de aprovação
+
+Serão considerados aprovados os alunos com média final $MF$ maior ou igual a 5,0. A média final é calculada por:
+
+$$MF = \alpha \cdot \beta \cdot (0,5 \cdot ML + 0,5 \cdot NF_{\text{proj}})$$
+
+em que $ML$ é a média das listas; $NF_{\text{proj}}$ é a nota final do projeto de curso; $\alpha$ é um coeficiente atribuído em função de $NF_{\text{proj}}$; e $\beta$ é um coeficiente obtido a partir de $N$, a porcentagem de vistos de atividades avaliativas obtidos pelo aluno.
+
+O valor de $\alpha$ é calculado por:
+
+$$\alpha = \left\{ \begin{array}{r@{\quad}l}
+0, & \text{se} \space NF_{\text{proj}} < 5,0; \space \text{ou}  \\ 
+1, & \text{caso contrário}
+\end{array}
+\right.$$
+
+e o valor de $\beta$ é dado na tabela a seguir: 
+
+
+| $0\% \leq NL \lt 20\%$ | $20\% \leq NL \lt 40\%$ | $40\% \leq NL \lt 60\%$ | $60\% \leq NL \lt 80\%$ | $80\% \leq NL \lt 100\%$ | $NL = 100\%$ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 1,00  | 1,01  | 1,02  | 1,03  | 1,04  | 1,05  |
+
+
+**A frequência será calculada a partir das listas de exercício entregues**: se todas as listas forem entregues, a frequência será 100%, e assim por diante. No cálculo da frequência, todas as listas entregues serão contadas, inclusive as que foram entregues com atraso. A frequência mínima para aprovação é estabelecida pelo regimento da USP (70%).
+
+Para os alunos que ficarem em recuperação, a nota final da recuperação será a média aritmética da nota obtida na recuperação e MF.
+
+
+
+# Monitores e Plantões de dúvidas
+
+Em 2021, os monitores PAE são:
 
 - Andre Morelli <<andre.morelli@usp.br>>
 - Elaine Ribeiro <<elainerribeiro@usp.br>>
 - Leandro Marcomini <<leandro.marcomini@usp.br>>
 - Paola Yumi <<paolayumi@usp.br>>
 
+Os monitores são responsáveis pela correção do projeto e das listas e por esclarecer dúvidas sobre o projeto e as listas de exercícios. Para esclarecimento de dúvidas, estarão disponíveis para atendimento apenas por email.
 
-<!-- ## 4. Notas de aula -->
+Os professores da disciplina também estarão disponíveis para atendimento aos alunos, por e-mail, ou preferencialmente, através do mural no Google Classroom. Postando suas perguntas no mural, você está ajudando os demais alunos, pois muitos deles terão a mesma dúvida. Mesmo as mensagens enviadas por e-mail para os docentes serão respondidas através do mural (sem o nome do aluno, obviamente).
+
+Os alunos podem postar perguntas diretamente no mural e os colegas que desejarem podem também respondê-las.
+
+Os plantões de dúvidas serão conduzidos na sala de videoconferência usada para as aulas, em dias e horários a serem estabelecidos.
+
+
+# Material de Apoio
+
+O material de apoio para a disciplina consiste de vídeos preparados pelos docente e um conjunto de notas de aula preparado a disciplina. Os vídeos estão hospedados no YouTube e uma playlist com a sequência dos vídeos será postada no mural e atualizada conforme a progressão dos assuntos estudados.
+
+As notas de aula normalmente estariam à venda na secretaria do STT, que se encontra fechada em função da pandemia. Por isso, os alunos interessados em adquirí-las devem procurar os docentes. Os alunos matriculados na disciplina podem adquirir as notas de aula por um preço reduzido (R$ 50,00).
+

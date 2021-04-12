@@ -1,0 +1,168 @@
+---
+title: "STT0408"
+subtitle: "Fundamentos de Engenharia de Transportes"
+author: "Prof. A. L. Cunha<br/> Prof. J. R. Setti"
+institute: "USP-EESC-STT"
+date: "13/4/2021"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '4:3' #16:9
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+xaringanExtra::use_editable(expires = 1)
+```
+
+class: middle, bottom, inverse
+background-image: url("ankush-minda-7KKQG0eB_TI-unsplash.jpg")
+background-size: cover
+
+
+# STT408 
+## Fundamentos de Engenharia de Transportes
+
+---
+# Programa resumido
+
+- Os sistemas de transporte: componentes, organização e importância econômica
+
+- Locomoção de veículos ferroviários
+
+- Locomoção de veículos rodoviários
+
+- Fluxo de veículos e seu controle
+
+- Capacidade viária
+
+- Fluxo de veículos em cruzamentos de vias
+
+---
+# Avaliação do Aprendizado
+
+Como o ensino neste semestre não será presencial:
+
+1. Listas de Exercícios
+
+2. Atividades Avaliativas
+
+3. Projeto de curso
+
+---
+# Avaliação do Aprendizado
+
+## 1. Listas de exercícios
+
+--
+- Conjunto de listas substituindo as "provas"
+
+- A entrega é **obrigatória**
+
+- Listas não entregues => **ZERO**
+
+- **Penalização de 1 ponto/dia** de atraso na entrega
+
+---
+# Avaliação do Aprendizado
+
+## 2. Atividades avaliativas
+
+--
+- Atividades (problemas, testes, etc.) resolvidos durante ou após a aula
+
+- A entrega é **facultativa**
+
+- **Bonificação de até 5% na nota**
+
+ 
+---
+# Avaliação do Aprendizado
+
+##3. Projeto de curso
+
+--
+- Entrega do projeto completo: **5 de julho de 2021**
+
+- Em grupos de **2 alunos**
+
+- Relatórios parciais entregues em datas preestabelecidas
+
+- Relatório final com as devidas correções parciais
+
+
+---
+# Avaliação do Aprendizado
+
+## Aprovação
+
+**A frequência será calculada a partir das listas de exercício entregues**
+
+--
+
+Serão considerados aprovados os alunos com média final $MF \geq 5,0$:
+
+$$MF = \alpha \cdot \beta \cdot (0,5 \cdot ML + 0,5 \cdot NF_{\text{proj}})$$
+
+--
+Fator $\alpha$:
+
+- $\alpha = 0$ : se $NF_{\text{proj}} < 5,0$
+
+- $\alpha = 1$ : caso contrário
+
+--
+
+Fator $\beta$:
+
+| $NL \lt 20\%$ | $NL \lt 40\%$ | $NL \lt 60\%$ | $NL \lt 80\%$ | $NL \lt 100\%$ | $NL = 100\%$ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 1,00  | 1,01  | 1,02  | 1,03  | 1,04  | 1,05  |
+
+
+---
+# Monitores e Plantões de dúvidas
+
+Utilizem o **Mural Classroom** para qualquer dúvida.
+
+--
+## Docentes
+- Prof. A. L. Cunha <<alcunha@usp.br>>
+- Prof. J. R. Setti <<jrasetti@usp.br>>
+
+
+--
+## Monitores PAE
+
+- Andre Morelli <<andre.morelli@usp.br>>
+- Elaine Ribeiro <<elainerribeiro@usp.br>>
+- Leandro Marcomini <<leandro.marcomini@usp.br>>
+- Paola Yumi <<paolayumi@usp.br>>
+
+
+.can-edit[
+|Dia    | Horário|
+| :---  | :---   |
+| dia  | horario |
+| dia  | horario |
+| dia  | horario |
+]
+
+
+---
+# Material de Apoio
+
+- Vídeos e notas de aulas preparados pelos docente
+
+- Vídeos hospedados no YouTube e playlist postada e atualizada no mural
+
+- As notas de aula normalmente estariam à venda na secretaria do STT <br/>(apostila prof. Setti) : **R$ 50,00**
+
+- Os alunos interessados em adquirí-las devem procurar os docentes
+
+---
