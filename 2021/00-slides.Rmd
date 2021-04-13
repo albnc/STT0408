@@ -138,21 +138,22 @@ Utilizem o **Mural Classroom** para qualquer dúvida.
 
 --
 ## Monitores PAE
-
+.pull-left[
 - Andre Morelli <<andre.morelli@usp.br>>
 - Elaine Ribeiro <<elainerribeiro@usp.br>>
 - Leandro Marcomini <<leandro.marcomini@usp.br>>
 - Paola Yumi <<paolayumi@usp.br>>
-
-
-.can-edit[
-|Dia    | Horário|
-| :---  | :---   |
-| dia  | horario |
-| dia  | horario |
-| dia  | horario |
 ]
 
+.pull-right[
+.center[Horário de atendimento]
+
+|Dia    | Horário|
+| :---  | :---   |
+| segunda-feira  | 14h-16h |
+| quinta-feira  | 16h-18h |
+
+]
 
 ---
 # Material de Apoio
@@ -166,3 +167,16 @@ Utilizem o **Mural Classroom** para qualquer dúvida.
 - Os alunos interessados em adquirí-las devem procurar os docentes
 
 ---
+ 
+
+<!-- --- -->
+<!-- class: middle, center, inverse -->
+
+<!-- # Engenharia de Transportes -->
+
+<!-- --- -->
+<!-- class: middle, center, inverse -->
+
+<!-- <iframe width="800" height="600" src="https://www.youtube.com/embed/Cmoczxuv_C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<!-- --- -->
