@@ -1,0 +1,61 @@
+---
+title: "STT0408"
+subtitle: "Fundamentos de Engenharia de Transportes"
+author: "Prof. A. L. Cunha<br/> Prof. J. R. Setti"
+institute: "USP-EESC-STT"
+date: "27/4/2021"
+output:
+  xaringan::moon_reader:
+    seal: false #remove title slide
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '4:3' #16:9
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+xaringanExtra::use_editable(expires = 1)
+```
+
+class: middle, bottom, inverse
+background-image: url("ankush-minda-7KKQG0eB_TI-unsplash.jpg")
+background-size: cover
+
+
+# STT0408 
+## Fundamentos de Engenharia de Transportes
+
+---
+# Força Tratora (Motriz)
+
+- Descrevendo as forças
+
+--
+
+- Forças atuantes em X: $F_t = R_t$
+
+--
+
+- Forças atuantes em Y: $G = N$
+
+--
+
+- Equação de força: $F = \frac{P}{V}$
+
+--
+
+- Força útil: $F = \eta \cdot \frac{P}{V}$
+
+--
+
+- Força útil: $F = 3,6 \cdot \eta \cdot \frac{P}{V}$
+
+
+
+
+
+
