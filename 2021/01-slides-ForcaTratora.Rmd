@@ -54,6 +54,13 @@ background-size: cover
 
 - Força útil: $F = 3,6 \cdot \eta \cdot \frac{P}{V}$
 
+---
+# Resistência ao movimento
+
+## Resistência inerente ao movimento
+
+$$R_b = $$
+
 
 
 
