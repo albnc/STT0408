@@ -1,6 +1,3 @@
----
----
-
 # STT0408
 ## Fundamentos de Engenharia de Transportes
 
