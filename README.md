@@ -17,11 +17,8 @@ Informações da Disciplina
 ## Objetivos da disciplina
 
 1. caracterizar os componentes dos sistemas de transporte;
-2. discutir os conceitos básicos da locomoção veicular para entender como o desempe-
-nho dos veículos influencia o projeto e a operação de sistemas de transporte;
-3. introduzir os conceitos básicos sobre fluxo de veículos, seu controle e capacidade
-viária, procurando mostrar como esses fatores determinam o projeto e operação do
-sistema de transporte;
+2. discutir os conceitos básicos da locomoção veicular para entender como o desempenho dos veículos influencia o projeto e a operação de sistemas de transporte;
+3. introduzir os conceitos básicos sobre fluxo de veículos, seu controle e capacidade viária, procurando mostrar como esses fatores determinam o projeto e operação do sistema de transporte;
 4. aprender a trabalhar em equipe para desenvolver projetos de engenharia; e
 5. criar e usar software para resolver problemas de engenharia.
 
