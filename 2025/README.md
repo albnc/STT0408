@@ -10,12 +10,10 @@ Docentes Responsáveis
 
 # AULAS
 
-## Aula 0
-
-Introdução e revisão do uso de Planilhas Eletrônicas
+## 0. Revisão de Planilhas Eletrônicas
 
 Objetivo
-: Aula para nivelamento dos alunos em programação usando planilhas eletrônicas. A automatização de cálculos é ferramenta essencial no desenvolvimento de projetos de Engenharia e nesta disciplina o aluno tem como produto final um projeto em Engenharia de Transportes.   
+: Aula introdutória e de nivelamento em programação usando planilhas eletrônicas. A automatização de cálculos é ferramenta essencial no desenvolvimento de projetos de Engenharia, assim como no projeto de curso desta disciplina.   
 
 
 Material de referência
