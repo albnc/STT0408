@@ -9,11 +9,11 @@ Docentes Responsáveis
 
 ## 0. Revisão de Planilhas Eletrônicas
 
-Objetivo
+**Objetivo**
 : Aula introdutória e de nivelamento em programação usando planilhas eletrônicas. A automatização de cálculos é ferramenta essencial no desenvolvimento de projetos de Engenharia, assim como no projeto de curso desta disciplina.   
 
 
-Material de referência
+**Material de referência**
 : Alguns livros que recomendo para quem busca se especializar em programação efetiva com planilhas
 
 - "*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003. Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*" - Haddad & Haddad
