@@ -5,11 +5,9 @@ Docentes Responsáveis
 - [prof. André Luiz Cunha](https://scholar.google.com/citations?hl=pt-BR&user=HI0CQJMAAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
 - [prof. José Reynaldo Setti](https://scholar.google.com/citations?hl=pt-BR&user=dhzpfA0AAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
 
-# 2025
+# AULAS | 2025
 
-## AULAS
-
-### 0. Revisão de Planilhas Eletrônicas
+## 0. Revisão de Planilhas Eletrônicas
 
 Objetivo
 : Aula introdutória e de nivelamento em programação usando planilhas eletrônicas. A automatização de cálculos é ferramenta essencial no desenvolvimento de projetos de Engenharia, assim como no projeto de curso desta disciplina.   
