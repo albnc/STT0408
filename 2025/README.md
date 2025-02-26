@@ -1,6 +1,6 @@
 # STT0408 - 2025
 
-## Fundamentos de Engenharia de Transportes**
+## Fundamentos de Engenharia de Transportes
 
 Docentes Responsáveis
 : 
