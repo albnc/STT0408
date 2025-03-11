@@ -6,6 +6,8 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     Eletrônicas](#0-revisão-de-planilhas-eletrônicas)
   - [1. Força Motriz em Veículos
     Ferroviários](#1-força-motriz-em-veículos-ferroviários)
+    - [Forças Atuantes](#forças-atuantes)
+    - [Equilíbrio de Forças](#equilíbrio-de-forças)
 
 # AULAS \| 2025
 
@@ -34,3 +36,16 @@ programação efetiva com planilhas
   Mike Girvin
 
 ## 1. Força Motriz em Veículos Ferroviários
+
+![](https://img2.gratispng.com/20180410/qie/avf5obh2k.webp)
+
+### Forças Atuantes
+
+- Força Motriz ou Tratora ($F_{t}$)
+- Resistências ($R_{t}$)
+
+### Equilíbrio de Forças
+
+- $F_{t} < R_{t} \Rightarrow$ desacelerando
+- $F_{t} > R_{t} \Rightarrow$ acelerando
+- $F_{t} = R_{t} \Rightarrow$ velocidade constante

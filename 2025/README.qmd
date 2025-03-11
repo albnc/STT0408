@@ -30,3 +30,16 @@ format:
 
 
 ## 1. Força Motriz em Veículos Ferroviários
+
+![](https://img2.gratispng.com/20180410/qie/avf5obh2k.webp)
+
+### Forças Atuantes
+
+- Força Motriz ou Tratora ($F_{t}$)
+- Resistências ($R_{t}$)
+
+### Equilíbrio de Forças
+
+- $F_{t} < R_{t} \Rightarrow$ desacelerando
+- $F_{t} > R_{t} \Rightarrow$ acelerando
+- $F_{t} = R_{t} \Rightarrow$ velocidade constante
