@@ -52,8 +52,12 @@ format:
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
 $$
-P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
+P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt}
 $$
+$$
+P = F \cdot v
+$$
+
 Sendo:    
 - $W$ o Trabalho da Força [W - *Watt*]    
 - $F$ a resultante da Força [N - *Newton*]    
@@ -65,6 +69,7 @@ Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte
 $$
 F_{t} = 3,6 \cdot \frac{P}{v}
 $$
+
 Sendo:    
 - $W$ o Trabalho da Força [kW]    
 - $F$ a resultante da Força [kN]   

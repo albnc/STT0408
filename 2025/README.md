@@ -61,8 +61,12 @@ style="width:50.0%" alt="Forces" />
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
 $$
-P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
-$$ Sendo:  
+P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt}
+$$ $$
+P = F \cdot v
+$$
+
+Sendo:  
 - $W$ o Trabalho da Força \[W - *Watt*\]  
 - $F$ a resultante da Força \[N - *Newton*\]  
 - $S$ o deslocamento \[m - *metros*\]  
@@ -73,7 +77,9 @@ seguinte equação com as unidades métricas:
 
 $$
 F_{t} = 3,6 \cdot \frac{P}{v}
-$$ Sendo:  
+$$
+
+Sendo:  
 - $W$ o Trabalho da Força \[kW\]  
 - $F$ a resultante da Força \[kN\]  
 - $v$ a velocidade do veículo \[km/h\]
