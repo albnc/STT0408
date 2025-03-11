@@ -94,17 +94,17 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
-constante de, por exemplo, 1.000 kW será de:
+constante de, por exemplo, $1.000~kW$ será de:
 
 ``` r
 # Potência em kW
 P = 1000
-# Velocidade em km/h
-v = 1:120
 # Eficiência
 n = 0.82
+# Velocidades em km/h
+v = 1:150
 
-Ft = n * 3.6 * ( P / v)
+Ft = n * 3.6 * ( P / v )
 
 plot(v, Ft, type='l', col='red', lwd=2, 
      xlab='Velocidade [km/h]',
@@ -112,3 +112,36 @@ plot(v, Ft, type='l', col='red', lwd=2,
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-1-1.png)
+
+É importante observar que o gráfico apresenta valores para qualquer
+extremidade, e sabemos que os motores tem limitações, a saber: 1. da
+corrente elétrica (máxima força tratora disponível) no eixo Y,  
+2. da voltagem ou rotação do motor (máxima velocidade disponível) no
+eixo X.
+
+Dessa forma, a função anterior fica limita a esses dois limites. Como
+exemplo, considere a velociade máxima de $90~km/h$ e a força tratora
+máxima pela corrente elétrica $Ftce = 150~kN$.
+
+``` r
+# Potência em kW
+P = 1000
+# Eficiência
+n = 0.82
+# Limite da voltagem/rotação do motor
+vmax = 110 #km/h
+# Velocidades em km/h
+v = 1:vmax
+# Limite da corrente elétrica
+Ftce = 150 #kN
+
+Ft = n * 3.6 * ( P / v )
+Ft[Ft > Ftce] = Ftce
+
+
+plot(v, Ft, type='l', col='red', lwd=2, 
+     xlab='Velocidade [km/h]',
+     ylab='Força Tratora [kN]')
+```
+
+![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
