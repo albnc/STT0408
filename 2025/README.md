@@ -121,8 +121,9 @@ corrente elétrica (máxima força tratora disponível) no eixo Y,
 eixo X.
 
 Dessa forma, a função anterior fica limita a esses dois limites. Como
-exemplo, considere a velociade máxima de $90~km/h$ e a força tratora
-máxima pela corrente elétrica $Ftce = 150~kN$.
+exemplo, considere a velociade máxima de $90 km/h$ e a força tratora
+máxima pela corrente elétrica, limitada pela **Velocidade Mínima de
+Operação Constante** (VMOC) de $20 km/h$.
 
 ``` r
 # Potência em kW
@@ -133,8 +134,9 @@ n = 0.82
 vmax = 90 #km/h
 # Velocidades em km/h
 v = 1:vmax
-# Limite da corrente elétrica
-Ftce = 150 #kN
+# Limite da corrente elétrica - VMOC
+VMOC = 20 #km/h
+Ftce = n * 3.6 * (P / VMOC) #kN
 
 ## EQUAÇAO
 Ft = n * 3.6 * ( P / v )
