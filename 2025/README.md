@@ -61,7 +61,7 @@ style="width:50.0%" alt="Forces" />
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
 $$
-P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt}
+P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
 $$ $$
 P = F \cdot v
 $$
