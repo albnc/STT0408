@@ -8,6 +8,8 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     Ferroviários](#1-força-motriz-em-veículos-ferroviários)
     - [Forças Atuantes](#forças-atuantes)
     - [Equilíbrio de Forças](#equilíbrio-de-forças)
+    - [Força Motriz](#força-motriz)
+    - [Eficiência de Transmissão](#eficiência-de-transmissão)
 
 # AULAS \| 2025
 
@@ -37,15 +39,52 @@ programação efetiva com planilhas
 
 ## 1. Força Motriz em Veículos Ferroviários
 
-![](https://img2.gratispng.com/20180410/qie/avf5obh2k.webp)
-
 ### Forças Atuantes
 
 - Força Motriz ou Tratora ($F_{t}$)
 - Resistências ($R_{t}$)
+- Força Peso ($G$)
+- Força Normal ($N$)
+
+<img
+src="https://cdn.storyboardthat.com/storyboard-cells/4676253/cell-col-0-row-1.png"
+style="width:50.0%" alt="Forces" />
 
 ### Equilíbrio de Forças
 
 - $F_{t} < R_{t} \Rightarrow$ desacelerando
 - $F_{t} > R_{t} \Rightarrow$ acelerando
 - $F_{t} = R_{t} \Rightarrow$ velocidade constante
+
+### Força Motriz
+
+A *Potência* é derivada do *Trabalho de uma Força*, portanto:
+
+$$
+P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
+$$ Sendo:  
+- $W$ o Trabalho da Força \[W - *Watt*\]  
+- $F$ a resultante da Força \[N - *Newton*\]  
+- $S$ o deslocamento \[m - *metros*\]  
+- $v$ a velocidade do veículo \[m/s\]
+
+Para o cálculo da Força Motriz em função da Potência, utilizamos a
+seguinte equação com as unidades métricas:
+
+$$
+F_{t} = 3,6 \cdot \frac{P}{v}
+$$ Sendo:  
+- $W$ o Trabalho da Força \[kW\]  
+- $F$ a resultante da Força \[kN\]  
+- $v$ a velocidade do veículo \[km/h\]
+
+### Eficiência de Transmissão
+
+Em todo motor existem perdas resultante do atrito das peças, do sistema
+de transmissão, dos sistemas auxiliares (compressor, corrente,
+alternador, etc.). Portanto admitimos uma eficiência $\eta$, em
+locomotivas, em torno de **0,82**:
+
+$$
+F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
+$$
