@@ -10,6 +10,7 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     - [Equilíbrio de Forças](#equilíbrio-de-forças)
     - [Força Motriz](#força-motriz)
     - [Eficiência de Transmissão](#eficiência-de-transmissão)
+    - [Tração por aderência](#tração-por-aderência)
 
 # AULAS \| 2025
 
@@ -151,3 +152,31 @@ plot(v, Ft, type='l', col='red', lwd=2,
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
+
+### Tração por aderência
+
+Para que a locomotiva não patine, a **Força Tratora** nas rodas deve ser
+menor que a **Força de aderência** entre o trilho e as rodas:
+$F_{t} \leq F_{a}$.
+
+Portanto a **Força Motriz Máxima** está limitada a aderência na
+interface roda-trilho:
+
+$$
+Ft_{max} \leq f \cdot T_{d}
+$$
+
+Em que:  
+- $T_{d}$ é o peso aderente \[kN\]  
+- $f$ é a aderência
+
+| Estado do trilho   | Aderência |
+|:-------------------|----------:|
+| Totalmente seco    |      0,33 |
+| Lavado pela chuva  |      0,33 |
+| Seco e limpo       |      0,22 |
+| Seco               |      0,20 |
+| Molhado pela chuva |      0,14 |
+| Úmido de orvalho   |     0,125 |
+| Úmido e sujo       |      0,11 |
+| Sujo de óleo       |      0,10 |
