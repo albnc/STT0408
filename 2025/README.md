@@ -1,13 +1,20 @@
 # STT0408 - Fundamentos de Engenharia de Transportes
+Prof. André Luiz Cunha, Prof. José Reynaldo Setti
 
+- [AULAS \| 2025](#aulas--2025)
+  - [0. Revisão de Planilhas
+    Eletrônicas](#0-revisão-de-planilhas-eletrônicas)
+  - [1. Força Motriz em Veículos
+    Ferroviários](#1-força-motriz-em-veículos-ferroviários)
 
 <!-- # STT0408 - Fundamentos de Engenharia de Transportes -->
 
-**Docentes Responsáveis**  
-[prof. André Luiz
-Cunha](https://scholar.google.com/citations?hl=pt-BR&user=HI0CQJMAAAAJ&view_op=list_works&authuser=1&sortby=pubdate)  
-[prof. José Reynaldo
-Setti](https://scholar.google.com/citations?hl=pt-BR&user=dhzpfA0AAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
+**Docentes Responsáveis**:
+
+- [prof. André Luiz
+  Cunha](https://scholar.google.com/citations?hl=pt-BR&user=HI0CQJMAAAAJ&view_op=list_works&authuser=1&sortby=pubdate)  
+- [prof. José Reynaldo
+  Setti](https://scholar.google.com/citations?hl=pt-BR&user=dhzpfA0AAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
 
 # AULAS \| 2025
 
@@ -34,3 +41,5 @@ programação efetiva com planilhas
 - “*[Microsoft 365 Excel: The Only App That
   Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*” -
   Mike Girvin
+
+## 1. Força Motriz em Veículos Ferroviários
