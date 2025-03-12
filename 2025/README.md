@@ -115,7 +115,8 @@ df |> ggplot(aes(x=v, y=Ft)) +
   xlab("Velocidade [km/h]") +
   ylab("Força Tratora [kN]") +
   labs(title = "Força Motriz em Locomotiva",
-       subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
+       subtitle = paste("Exemplo de motor com Potência de",P,"kW")) +
+  theme_bw()
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
@@ -171,7 +172,8 @@ df |> ggplot(aes(x=v, y=Ft)) +
   xlab("Velocidade [km/h]") +
   ylab("Força Tratora [kN]") +
   labs(title = "Força Motriz em Locomotiva",
-       subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
+       subtitle = paste("Exemplo de motor com Potência de",P,"kW")) +
+  theme_bw()
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
