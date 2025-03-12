@@ -39,7 +39,7 @@ format:
 - Força Peso ($G$)
 - Força Normal ($N$)
 
-![Forces](https://www.researchgate.net/profile/Miguel-Rodriguez-117/publication/361214616/figure/fig1/AS:1165532300623872@1654895963003/Free-body-diagram-of-a-locomotive.ppm){width=50%}
+![Forces](_img/locomotive.png){width=60%}
 
 ### Equilíbrio de Forças
 

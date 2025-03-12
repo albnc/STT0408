@@ -47,9 +47,7 @@ programação efetiva com planilhas
 - Força Peso ($G$)
 - Força Normal ($N$)
 
-<img
-src="https://www.researchgate.net/profile/Miguel-Rodriguez-117/publication/361214616/figure/fig1/AS:1165532300623872@1654895963003/Free-body-diagram-of-a-locomotive.ppm"
-style="width:50.0%" alt="Forces" />
+<img src="_img/locomotive.png" style="width:60.0%" alt="Forces" />
 
 ### Equilíbrio de Forças
 
