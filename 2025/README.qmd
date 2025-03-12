@@ -88,7 +88,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-```{r, echo=TRUE }
+```{r}
 # Potência em kW
 P = 1000
 # Eficiência
