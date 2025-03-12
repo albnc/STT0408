@@ -48,7 +48,7 @@ programação efetiva com planilhas
 - Força Normal ($N$)
 
 <img
-src="https://cdn.storyboardthat.com/storyboard-cells/4676253/cell-col-0-row-1.png"
+src="https://www.researchgate.net/profile/Miguel-Rodriguez-117/publication/361214616/figure/fig1/AS:1165532300623872@1654895963003/Free-body-diagram-of-a-locomotive.ppm"
 style="width:50.0%" alt="Forces" />
 
 ### Equilíbrio de Forças
