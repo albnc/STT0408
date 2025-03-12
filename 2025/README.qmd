@@ -39,7 +39,7 @@ format:
 - Força Peso ($G$)
 - Força Normal ($N$)
 
-![Forces](_img/locomotive.png){width=60%}
+![Forces](_img/locomotive.png){width=50%}
 
 ### Equilíbrio de Forças
 
