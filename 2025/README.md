@@ -96,22 +96,6 @@ Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
 constante de, por exemplo, $1.000~kW$ será de:
 
 ``` r
-library(ggplot2)
-library(dplyr)
-```
-
-
-    Attaching package: 'dplyr'
-
-    The following objects are masked from 'package:stats':
-
-        filter, lag
-
-    The following objects are masked from 'package:base':
-
-        intersect, setdiff, setequal, union
-
-``` r
 # Potência em kW
 P = 1000
 # Eficiência
@@ -134,7 +118,7 @@ df |> ggplot(aes(x=v, y=Ft)) +
        subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-1-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 ``` r
 # plot(v, Ft, type='l', col='red', lwd=2, 
@@ -181,7 +165,7 @@ plot(v, Ft, type='l', col='red', lwd=2,
      ylab='Força Tratora [kN]')
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 ### Tração por aderência
 
