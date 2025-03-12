@@ -165,8 +165,8 @@ df <- data.frame(v = v,
 ## Plotar
 df |> ggplot(aes(x=v, y=Ft)) +
   geom_line(color='red', linewidth=1) +
-  scale_x_continuous(breaks=seq(0,140,20)) +
-  scale_y_continuous(breaks=seq(0,3000,500)) +
+  scale_x_continuous(breaks=seq(0,vmax,10)) +
+  scale_y_continuous(breaks=seq(0,round(Ftce/5,0)*5,20)) +
   xlab("Velocidade [km/h]") +
   ylab("Força Tratora [kN]") +
   labs(title = "Força Motriz em Locomotiva",
