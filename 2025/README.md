@@ -93,7 +93,7 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
-constante de, por exemplo, $1.000~kW$ será de:
+constante de, por exemplo, $1.000$ kW será de:
 
 ``` r
 # Potência em kW
@@ -127,15 +127,16 @@ df |> ggplot(aes(x=v, y=Ft)) +
 ```
 
 É importante observar que o gráfico apresenta valores para qualquer
-extremidade, e sabemos que os motores tem limitações, a saber: 1. da
-corrente elétrica (máxima força tratora disponível) no eixo Y,  
-2. da voltagem ou rotação do motor (máxima velocidade disponível) no
-eixo X.
+extremidade, e sabemos que os motores tem limitações, a saber:
+
+1.  da corrente elétrica (máxima força tratora disponível) no eixo Y,  
+2.  da voltagem ou rotação do motor (máxima velocidade disponível) no
+    eixo X.
 
 Dessa forma, a função anterior fica limita a esses dois limites. Como
-exemplo, considere a velociade máxima de $90 km/h$ e a força tratora
+exemplo, considere a velociade máxima de 90 km/h e a força tratora
 máxima pela corrente elétrica, limitada pela **Velocidade Mínima de
-Operação Constante** (VMOC) de $20 km/h$.
+Operação Constante** (VMOC) de 20 km/h.
 
 ``` r
 # Potência em kW
@@ -192,15 +193,20 @@ Em que:
 - $T_{d}$ é o peso aderente \[kN\]  
 - $f$ é a aderência
 
-| Estado do trilho   | Aderência |
-|:-------------------|----------:|
-| Totalmente seco    |      0,33 |
-| Lavado pela chuva  |      0,33 |
-| Seco e limpo       |      0,22 |
-| Seco               |      0,20 |
-| Molhado pela chuva |      0,14 |
-| Úmido de orvalho   |     0,125 |
-| Úmido e sujo       |      0,11 |
-| Sujo de óleo       |      0,10 |
+| ***Estado do trilho*** | ***Aderência*** |
+|:-----------------------|----------------:|
+| Totalmente seco        |            0,33 |
+| Lavado pela chuva      |            0,33 |
+| Seco e limpo           |            0,22 |
+| Seco                   |            0,20 |
+| Molhado pela chuva     |            0,14 |
+| Úmido de orvalho       |           0,125 |
+| Úmido e sujo           |            0,11 |
+| Sujo de óleo           |            0,10 |
+
+Valores típicos do coeficiente de aderência *f* [^1]
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
+
+[^1]: Fonte: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New
+    York, 2ª edição.
