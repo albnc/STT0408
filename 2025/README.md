@@ -193,6 +193,9 @@ Em que:
 - $T_{d}$ é o peso aderente \[kN\]  
 - $f$ é a aderência
 
+A tabela abaixo[^1] descreve valores típicos do *coeficiente de
+aderência* $f$ para várias condições do trilho.
+
 | ***Estado do trilho*** | ***Aderência*** |
 |:-----------------------|----------------:|
 | Totalmente seco        |            0,33 |
@@ -203,8 +206,6 @@ Em que:
 | Úmido de orvalho       |           0,125 |
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
-
-Valores típicos do coeficiente de aderência *f* [^1]
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
