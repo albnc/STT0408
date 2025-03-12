@@ -208,5 +208,5 @@ Valores típicos do coeficiente de aderência *f* [^1]
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
-[^1]: Fonte: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New
-    York, 2ª edição.
+[^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
+    edição.

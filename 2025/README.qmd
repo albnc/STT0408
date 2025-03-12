@@ -7,6 +7,7 @@ author:
 format: 
   gfm:
     toc: true
+    tbl-cap-location: top
 ---
 
 
@@ -174,6 +175,7 @@ Em que:
 - $f$ é a aderência
 
 
+
 |***Estado do trilho*** | ***Aderência*** |
 |:----------------|----:|
 |Totalmente seco | 0,33 |
@@ -184,8 +186,10 @@ Em que:
 |Úmido de orvalho | 0,125 |
 |Úmido e sujo | 0,11 |
 |Sujo de óleo | 0,10 |
+
 : Valores típicos do coeficiente de aderência *f* [^fad]
 
-[^fad]: Fonte: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª edição.
+
+[^fad]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª edição.
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
