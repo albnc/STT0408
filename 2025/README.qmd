@@ -83,7 +83,7 @@ $$
 
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência** constante de, por exemplo, $1.000~kW$ será de:
 
-```{r}
+```{r, echo=FALSE}
 library(ggplot2)
 library(dplyr)
 
