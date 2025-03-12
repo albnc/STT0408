@@ -159,10 +159,18 @@ Ft[Ft > Ftce] = Ftce
 v <- c(v, vmax)
 Ft <- c(Ft, 0)
 
+df <- data.frame(v = v,
+                 Ft = Ft)
+
 ## Plotar
-plot(v, Ft, type='l', col='red', lwd=2, 
-     xlab='Velocidade [km/h]',
-     ylab='Força Tratora [kN]')
+df |> ggplot(aes(x=v, y=Ft)) +
+  geom_line(color='red', linewidth=1) +
+  scale_x_continuous(breaks=seq(0,140,20)) +
+  scale_y_continuous(breaks=seq(0,3000,500)) +
+  xlab("Velocidade [km/h]") +
+  ylab("Força Tratora [kN]") +
+  labs(title = "Força Motriz em Locomotiva",
+       subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
