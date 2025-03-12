@@ -125,7 +125,7 @@ df <- data.frame(v = v,
                  Ft = Ft)
 
 df |> ggplot(aes(x=v, y=Ft)) +
-  geom_line(color='red', size=1) +
+  geom_line(color='red', linewidth=1) +
   scale_x_continuous(breaks=seq(0,140,20)) +
   scale_y_continuous(breaks=seq(0,3000,500)) +
   xlab("Velocidade [km/h]") +
@@ -133,9 +133,6 @@ df |> ggplot(aes(x=v, y=Ft)) +
   labs(title = "Força Motriz em Locomotiva",
        subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
 ```
-
-    Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-    ℹ Please use `linewidth` instead.
 
 ![](README_files/figure-commonmark/unnamed-chunk-1-1.png)
 
