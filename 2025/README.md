@@ -96,6 +96,22 @@ Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
 constante de, por exemplo, $1.000~kW$ será de:
 
 ``` r
+library(ggplot2)
+library(dplyr)
+```
+
+
+    Attaching package: 'dplyr'
+
+    The following objects are masked from 'package:stats':
+
+        filter, lag
+
+    The following objects are masked from 'package:base':
+
+        intersect, setdiff, setequal, union
+
+``` r
 # Potência em kW
 P = 1000
 # Eficiência
@@ -105,12 +121,29 @@ v = 1:150
 
 Ft = n * 3.6 * ( P / v )
 
-plot(v, Ft, type='l', col='red', lwd=2, 
-     xlab='Velocidade [km/h]',
-     ylab='Força Tratora [kN]')
+df <- data.frame(v = v, 
+                 Ft = Ft)
+
+df |> ggplot(aes(x=v, y=Ft)) +
+  geom_line(color='red', size=1) +
+  scale_x_continuous(breaks=seq(0,140,20)) +
+  scale_y_continuous(breaks=seq(0,3000,500)) +
+  xlab("Velocidade [km/h]") +
+  ylab("Força Tratora [kN]") +
+  labs(title = "Força Motriz em Locomotiva",
+       subtitle = paste("Exemplo de motor com Potência de",P,"kW"))
 ```
 
+    Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+    ℹ Please use `linewidth` instead.
+
 ![](README_files/figure-commonmark/unnamed-chunk-1-1.png)
+
+``` r
+# plot(v, Ft, type='l', col='red', lwd=2, 
+#      xlab='Velocidade [km/h]',
+#      ylab='Força Tratora [kN]')
+```
 
 É importante observar que o gráfico apresenta valores para qualquer
 extremidade, e sabemos que os motores tem limitações, a saber: 1. da
@@ -180,3 +213,5 @@ Em que:
 | Úmido de orvalho   |     0,125 |
 | Úmido e sujo       |      0,11 |
 | Sujo de óleo       |      0,10 |
+
+[ATIVIDADE 1](_atividades/ATV1.md)
