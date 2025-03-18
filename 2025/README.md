@@ -245,7 +245,7 @@ Em que,
 - $V$ : velocidade do veículo [km/h]
 - $c_1$ : constante que incorpora o efeito da deformação da roda e do trilho ($\approx 0,65$)
 - $c_2$ : constante que incorpora o efeito do atrito dos mancais ($\approx 125$)
-- $c_3$ : constante que incorpora o efeito do atrito entre friso das rodas e trilho (passageiro e locomotiva \appox 0,009; vagão \approx 0,013)
+- $c_3$ : constante que incorpora o efeito do atrito entre friso das rodas e trilho (passageiro e locomotiva $\appox 0,009$; vagão $\approx 0,013$)
 
 ### Resistência Aerodinâmica
 
