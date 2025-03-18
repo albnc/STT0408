@@ -93,11 +93,11 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
-constante de, por exemplo, $1.000$ kW será de:
+constante de, por exemplo, $1.500$ kW será de:
 
 ``` r
 # Potência em kW
-P = 1000
+P = 1500
 # Eficiência
 n = 0.82
 # Velocidades em km/h
@@ -141,7 +141,7 @@ Operação Constante** (VMOC) de 20 km/h.
 
 ``` r
 # Potência em kW
-P = 1000
+P = 1500
 # Eficiência
 n = 0.82
 # Limite da voltagem/rotação do motor
@@ -208,6 +208,63 @@ aderência* $f$ para várias condições do trilho.
 | Úmido de orvalho       |           0,125 |
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
+
+Como exemplo, considere uma locomotiva com Peso Bruto Total de 100
+toneladas e um fator de aderência $f$ de 0,20, portanto:
+
+``` r
+# Potência em kW
+P = 1500
+# Eficiência
+n = 0.82
+# Limite da voltagem/rotação do motor
+vmax = 90 #km/h
+# Velocidades em km/h
+v = 1:vmax
+# Limite da corrente elétrica - VMOC
+VMOC = 20 #km/h
+Ftce = n * 3.6 * (P / VMOC) #kN
+# Peso Bruto [t]
+M = 100 #t
+# Peso Bruto em [kN]
+G = M * 10 # g (gravidade) = 10 m/s²
+# Fator de aderência
+f = 0.20
+
+
+## EQUAÇAO
+Ft = n * 3.6 * ( P / v )
+# LIMITE
+Ft[Ft > Ftce] = Ftce
+
+# Acrescentar o último ponto para fechar o limite.
+v <- c(v, vmax)
+Ft <- c(Ft, 0)
+
+# Aderência Máxima
+Ftmax = G * f
+
+# Força de Aderência
+
+df <- data.frame(v = v,
+                 Ft = Ft,
+                 Ftmax = Ftmax)
+
+## Plotar
+df |> ggplot(aes(x=v)) +
+  geom_line(aes(y=Ft),color='red', linewidth=1) +
+  geom_line(aes(y=Ftmax), color='blue', linewidth=1)+
+  scale_x_continuous(breaks=seq(0,vmax,10)) +
+  scale_y_continuous(breaks=seq(0,round(Ftce/5,0)*5,20)) +
+  xlab("Velocidade [km/h]") +
+  ylab("Força Tratora [kN]") +
+  labs(title = "Força Motriz em Locomotiva",
+       subtitle = paste("Exemplo de Locomotiva com Potência de",P,"kW e Peso Bruto de ",M, "t")) +
+  theme_bw()+
+  theme(legend.position = "bottom")
+```
+
+![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
