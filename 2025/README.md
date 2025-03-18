@@ -235,11 +235,11 @@ Dentre todas essas resistências, as resistências **ao rolamento e aerodinâmic
 Segundo o modelo proposto por Davis (1910):
 
 $$
-R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 * V \right) \cdot G 
+R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 * V \right) \cdot \frac{G}{1000}
 $$
 
 Em que:
-- $R_r$ é a resistência ao rolamento [N]
+- $R_r$ é a resistência ao rolamento [kN]
 - $x$ número de eixos da locomotiva ou vagão
 - $G$ peso da locomotiva ou vagão [kN]
 - $V$ velocidade do veículo [km/h]
@@ -250,7 +250,7 @@ Em que:
 ### Resistência Aerodinâmica
 
 $$
-R_a = c_a \cdot A \cdot V^2
+R_a = \frac{c_a \cdot A \cdot V^2}{1000}
 $$
 
 Tal que:
@@ -279,10 +279,10 @@ Em que:
 ### Resistência de Curva
 
 $$
-R_c = 698 \cdot \frac{G}{r}
+R_c = 0,698 \cdot \frac{G}{r}
 $$
 
 Sendo:
-- $R_c$ a resistência de curva [N]
+- $R_c$ a resistência de curva [kN]
 - $G$ é o peso do veículo (locomotiva ou vagão) [kN]
 - $r$ o raio de curva [m]
