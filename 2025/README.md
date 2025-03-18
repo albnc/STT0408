@@ -213,3 +213,76 @@ aderência* $f$ para várias condições do trilho.
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
+
+## 2. Resistências ao Movimento
+
+As forças resistivas ao movimento de um veículo ferroviário pode ser representado por:
+
+$$
+R_t = R_r + R_a + R_g + R_c
+$$
+
+Sendo:
+- $R_t$ : a resistência total [kN]
+- $R_r$ : a resistência ao rolamento [kN]
+- $R_a$ : a resistência aerodinâmica [kN]
+- $R_g$ : a resistência de rampa [kN]
+- $R_c$ : a resistência de curva [kN]
+
+Dentre todas essas resistências, as resistências **ao rolamento e aerodinâmica** sempre existirão, portanto é denominado de ***Resistência Básica ou Inerente***.
+
+### Resistência ao Rolamento
+Segundo o modelo proposto por Davis (1910):
+
+$$
+R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 * V \right) \cdot G 
+$$
+
+Em que:
+- $R_r$ é a resistência ao rolamento [N]
+- $x$ número de eixos da locomotiva ou vagão
+- $G$ peso da locomotiva ou vagão [kN]
+- $V$ velocidade do veículo [km/h]
+- $c_1$ constante que incorpora o efeito da deformação da roda e do trilho ($\approx 0,65$)
+- $c_2$ constante que incorpora o efeito do atrito dos mancais ($\approx 125$)
+- $c_3$ constante que incorpora o efeito do atrito entre friso das rodas e trilho (passageiro e locomotiva \appox 0,009; vagão \approx 0,013)
+
+### Resistência Aerodinâmica
+
+$$
+R_a = c_a \cdot A \cdot V^2
+$$
+
+Tal que:
+- $R_a$ resistência aerodinâmica [kN]
+- $c_a$ coeficiente aerodinâmico
+- $A$ área frontal do veículo [m²]
+
+| **Tipo de veículo** | **Área frontal (m²)** | **$c_a$** |
+| :------------------ |:---------------------| ----------:|
+| Locomotiva de carga | 9 -- 14,5 | 0,046 |
+| Locomotiva de passageiros | 9 -- 11 | 0,031 |
+| Vagões de carga | 7,5 -- 8,5 | 0,009 |
+| Carros de passageiros | 10 -- 11 | 0,006 |
+
+### Resistência de Rampa
+
+$$
+R_g = G \cdot i
+$$
+
+Em que:
+- $R_g$ é a resistência de rampa em [kN]
+- $G$ é o peso do veículo (locomotiva ou vagão) [kN]
+- $i$ a declividade da rampa [% -- em decimal]
+
+### Resistência de Curva
+
+$$
+R_c = 698 \cdot \frac{G}{r}
+$$
+
+Sendo:
+- $R_c$ a resistência de curva [N]
+- $G$ é o peso do veículo (locomotiva ou vagão) [kN]
+- $r$ o raio de curva [m]
