@@ -16,6 +16,7 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     - [Resistência Aerodinâmica](#resistência-aerodinâmica)
     - [Resistência de Rampa](#resistência-de-rampa)
     - [Resistência de Curva](#resistência-de-curva)
+  - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
 
 # AULAS \| 2025
 
@@ -459,7 +460,43 @@ abaixo da curva de $F_t$ é possível de ser operada.
 
 > [**ATIVIDADE 2**](_atividades/ATV02.pdf)
 
-------------------------------------------------------------------------
+## 3. Comprimento máximo do trem
+
+Para determinar o máximo comprimento que um trem pode trafegar, é
+necessário analisar o **trecho mais crítico**, ou seja, a rampa mais
+íngreme. Assim, dimensionando o número de locomotivas e vagões para o
+prior trecho, todos os demais segmentos da via serão atendidos.
+
+Portanto o dimensionamento segue o seguinte procedimento:
+
+1.  Determine o **trecho crítico**, aclive mais íngreme;
+
+2.  Para este trecho, determine a velocidade de operação ($V_{op}$) a
+    ser adotada, lembrando que não se pode operar o trem abaixo da
+    **VMOC** – *Velocidade Mínima de Operação Constante*;
+
+3.  Para a $V_{op}$, determine a relação do ***número de vagões que uma
+    locomotiva consegue rebocar***:
+
+$$
+F_t - R_t = m \cdot a \rightarrow F_t = R_t
+$$ $$
+F_t(V_{op}) = R_t^{Loc}(V_{op}) + n^{Vag} \cdot R_t^{Vag}(V_{op})
+$$ $$
+n^{Vag} = \frac{F_t(V_{op}) - R_t^{Loc}(V_{op})}{R_t^{Vag}(V_{op})}
+$$
+
+4.  Guarde esta relação: 1 Locomotiva $\rightarrow n^{Vag}$.
+
+5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de
+    1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
+    engate é capaz de suportar:
+
+$$
+n^{Vag}_{máx} = \frac{F_{eng}}{R_t^{Vag}(V_{op})}
+$$ 6. A patir dos valores dos itens (4) e (5), determine o tamanho da
+composição em termos de: $n_{Loc}$ locomotivas transportanto $n^{vag}$
+vagões.
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
