@@ -480,9 +480,13 @@ Portanto o dimensionamento segue o seguinte procedimento:
 
 $$
 F_t - R_t = m \cdot a \rightarrow F_t = R_t
+$$
 
+$$
 F_t(V_{op}) = R_t^{Loc}(V_{op}) + n^{Vag} \cdot R_t^{Vag}(V_{op})
+$$
 
+$$
 n^{Vag} = \frac{F_t(V_{op}) - R_t^{Loc}(V_{op})}{R_t^{Vag}(V_{op})}
 $$
 
@@ -492,9 +496,11 @@ $$
     1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
     engate é capaz de suportar:
 
-$$ 
-n^{Vag}_{max} = \frac{F_{eng}}{R^{Vag}_t} 
-$$
+\$\$
+
+n^{Vag}\_{max} =
+
+\$\$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
     composição em termos de: $n_{Loc}$ locomotivas transportanto
