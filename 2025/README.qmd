@@ -118,12 +118,12 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ```
 
-É importante observar que o gráfico apresenta valores para qualquer extremidade, e sabemos que os motores tem limitações, a saber:
+É importante observar que este gráfico apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
 
 1. da corrente elétrica (máxima força tratora disponível) no eixo Y,   
 2. da voltagem ou rotação do motor (máxima velocidade disponível) no eixo X. 
 
-Dessa forma, a função anterior fica limita a esses dois limites. Como exemplo, considere a velociade máxima de 90 km/h e a força tratora máxima pela corrente elétrica, limitada pela **Velocidade Mínima de Operação Constante** (VMOC) de 20 km/h.
+Dessa forma, a função anterior fica limita a esses dois limites. Como exemplo, considere a velocidade máxima de 90 km/h e a força tratora máxima pela corrente elétrica, limitada pela **Velocidade Mínima de Operação Constante** (VMOC) de 20 km/h.
 
 ```{r}
 # Potência em kW
@@ -164,9 +164,9 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ### Tração por aderência
 
-Para que a locomotiva não patine, a **Força Tratora** nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
+Para que as rodas da locomotiva não patine, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
 
-Portanto a **Força Motriz Máxima** está limitada a aderência na interface roda-trilho:
+Portanto a **Força Motriz Máxima** está limitada pela **aderência** da interface roda-trilho:
 
 $$
 Ft_{max} \leq f \cdot T_{d}
@@ -192,7 +192,11 @@ A tabela abaixo[^fad] descreve valores típicos do *coeficiente de aderência* $
 
 [^fad]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª edição.
 
-Como exemplo, considere uma locomotiva com Peso Bruto Total de 100 toneladas e um fator de aderência $f$ de 0,20, portanto:
+---
+
+**EXEMPLO: Força Tratora**
+
+Considere uma locomotiva com Peso Bruto Total de 100 toneladas e um fator de aderência $f$ de 0,20, portanto:
 
 ```{r}
 # Potência em kW
@@ -233,21 +237,26 @@ df <- data.frame(v = v,
                  Ftmax = Ftmax)
 
 ## Plotar
+colors <- c("Ft" = "red", "Ftmax" = "blue")
 df |> ggplot(aes(x=v)) +
-  geom_line(aes(y=Ft),color='red', linewidth=1) +
-  geom_line(aes(y=Ftmax), color='blue', linewidth=1)+
+  geom_line(aes(y=Ft, color='Ft'), linewidth=1) +
+  geom_line(aes(y=Ftmax, color='Ftmax'), linewidth=1)+
   scale_x_continuous(breaks=seq(0,vmax,10)) +
   scale_y_continuous(breaks=seq(0,round(Ftce/5,0)*5,20)) +
-  xlab("Velocidade [km/h]") +
-  ylab("Força Tratora [kN]") +
-  labs(title = "Força Motriz em Locomotiva",
-       subtitle = paste("Exemplo de Locomotiva com Potência de",P,"kW e Peso Bruto de ",M, "t")) +
-  theme_bw()+
-  theme(legend.position = "bottom")
+  labs( title = "Força Motriz em Locomotiva",
+        subtitle = paste("Exemplo de Locomotiva com Potência de",P,"kW e Peso Bruto de ",M, "t"),
+        x = "Velocidade [km/h]",
+        y = "Força Tratora [kN]",
+        color="Legend" ) +
+  theme_bw() +
+  scale_color_manual(values = colors)
+  
 ```
+
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
+---
 
 ## 2. Resistências ao Movimento
 
@@ -264,7 +273,7 @@ Sendo,
 - $R_g$ : resistência de rampa [kN]   
 - $R_c$ : resistência de curva [kN]
 
-Dentre todas essas resistências, as resistências **ao rolamento e aerodinâmica** sempre existirão, portanto é denominado de ***Resistência Básica ou Inerente***.
+Dentre todas essas resistências, as resistências **ao rolamento e aerodinâmica** sempre existe, portanto é denominado de ***Resistência Básica*** ou ***Resistência Inerente***.
 
 ### Resistência ao Rolamento
 Segundo o modelo proposto por Davis (1910):
@@ -321,3 +330,96 @@ Sendo,
 - $R_c$ : resistência de curva [kN]   
 - $G$ : peso do veículo (locomotiva ou vagão) [kN]   
 - $r$ : raio de curva [m]   
+
+---
+
+**EXEMPLO: Resistências**
+
+Considere uma locomotiva descrita anteriormente, área frontal de 10 m² e 6 eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%,  sem curva. Utilizando as equações e parâmetros anteriores teremos:
+
+```{r}
+## CONSTANTES
+# Gravidade
+g = 10 #m/s²
+
+## LOCOMOTIVA:
+# Número de locomotivas
+nL = 1
+# Número de eixos da locomotiva
+xL = 6
+# Área frontal da locomotiva
+AL = 9.0 #m²
+# Potência em kW
+P = 1500
+# Eficiência
+eta = 0.82
+# Limite da voltagem/rotação do motor
+vmax = 90 #km/h
+# Limite da corrente elétrica - VMOC
+VMOC = 20 #km/h
+# Força Tratora Máxima da Corrente Elétrica
+Ftce = eta * 3.6 * (P / VMOC) #kN
+# Massa da Locomotiva [t]
+mL = 100 #t
+# Peso Bruto em [kN]
+GL = mL * 10 # g (gravidade) = 10 m/s²
+# Fator de aderência
+f = 0.20
+
+## VAGÕES
+# Número de vagões
+nV = 10
+# Número de eixos do vagão
+xV = 4
+# Área frontal ddo vagão
+AV = 8.0 #m²
+# Massa de cada vagão
+mV = 80 # t
+# Peso Bruto do vagão em [kN]
+GV = mV * g #kN
+
+## DATAFRAME
+df <- data.frame(
+  V     = c(1:vmax,vmax),
+  FtCE  = Ftce
+  ) %>% 
+  rowwise(V) %>% 
+  mutate(
+    FtMotor  = nL * (eta * 3.6 * P / V),
+    Ft       = min(FtCE,FtMotor),
+    Ftmax    = nL * (f * GL),
+    R_Loc    = ((0.65 + (125 * xL) / GL + 0.009 * GL ) * GL / 1000) + (0.046 * AL * V * V)/1000,
+    R_Vag    = ((0.65 + (125 * xV) / GV + 0.013 * GV ) * GV / 1000) + (0.009 * AV * V * V)/1000,
+    Rt_plano = nL * R_Loc + nV * R_Vag,
+    Rt_aclive= Rt_plano + 0.01 * (nL * GL + nV * GV)
+  )
+df$Ft[nrow(df)] = 0.0
+
+## Plotar
+colors <- c("Ft" = "blue", "Ftmax" = "cyan", "Rt_0%" = "orange", "Rt_1%" = "red")
+df |> ggplot(aes(x=V)) +
+  geom_line(aes(y=Ft, color='Ft'), linewidth=1) +
+  geom_line(aes(y=Ftmax, color='Ftmax'), linewidth=1)+
+  geom_line(aes(y=Rt_plano, color='Rt_0%'), linewidth=1)+
+  geom_line(aes(y=Rt_aclive, color='Rt_1%'), linewidth=1)+
+  scale_x_continuous(breaks=seq(0,vmax,10)) +
+  scale_y_continuous(breaks=seq(0,round(max(df$Ft)/5,0)*5,20)) +
+  labs( title = "Força Tratora da Locomotiva vs. Resistências do Trem",
+        subtitle = paste("Exemplo com", nL, "Locomotiva(s) e", nV, "vagões"),
+        x = "Velocidade [km/h]",
+        y = "Força Tratora [kN]",
+        color="Legend" ) +
+  theme_bw() +
+  scale_color_manual(values = colors)
+  
+```
+
+Perceba que no trecho plano, a velocidade de equilíbrio para o trem do exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive de 1,0%, a composição tem velocidade de equilíbrio de 22 km/h. Ambas as situações considerando a Potência máxima da locomotiva, portanto cruzando com a curva da Froça Tratora ($F_t$). Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
+
+> [**ATIVIDADE 2**](_atividades/ATV02.pdf)
+
+## 3. Comprimento máximo do trem
+
+Para determinar o máximo comprimento que um trem pode trafegar, é necessário analisar o **trecho mais crítico**, a rampa mais íngreme. Assim, dimensionando o número de locomotivas e vagões para este cenário, todos os demais trechos da via serão atendidos.
+
+
