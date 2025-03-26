@@ -492,7 +492,9 @@ $$
     1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
     engate é capaz de suportar:
 
-$$ n^{Vag}_{max} = \frac{F_{eng}}{R^{Vag}_t} $$
+$$ 
+n^{Vag}_{max} = \frac{F_{eng}}{R^{Vag}_t} 
+$$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
     composição em termos de: $n_{Loc}$ locomotivas transportanto
