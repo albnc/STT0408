@@ -480,9 +480,9 @@ Portanto o dimensionamento segue o seguinte procedimento:
 
 $$
 F_t - R_t = m \cdot a \rightarrow F_t = R_t
-$$ $$
+
 F_t(V_{op}) = R_t^{Loc}(V_{op}) + n^{Vag} \cdot R_t^{Vag}(V_{op})
-$$ $$
+
 n^{Vag} = \frac{F_t(V_{op}) - R_t^{Loc}(V_{op})}{R_t^{Vag}(V_{op})}
 $$
 
