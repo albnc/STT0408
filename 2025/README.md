@@ -492,9 +492,7 @@ $$
 
 4.  Guarde esta relação: 1 Locomotiva $\rightarrow n^{Vag}$.
 
-5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de
-    1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
-    engate é capaz de suportar:
+5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de 1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o engate é capaz de suportar:
 
 $$ 
 n_{max.Vag} = \frac{F_{eng}}{R^{Vag}_t(V_{op})} 
