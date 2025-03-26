@@ -448,7 +448,7 @@ $$
 
 $$ 
 
-n^{Vag}_{max} = \frac{F_{eng}}{R^{Vag}_t} 
+n_{max.Vag} = \frac{F_{eng}}{R^{Vag}_t} 
 
 $$
 
