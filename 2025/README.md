@@ -495,7 +495,7 @@ $$
 5.  A partir da **Força Máxima do Engate** ($F_{eng}$), entre 1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o engate é capaz de suportar:
 
 $$ 
-n_{max} = \frac{F}{R(V_{op})} 
+n_{max} = \frac{F_{eng}}{R(V_{op})} 
 $$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
