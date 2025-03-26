@@ -493,7 +493,7 @@ $$
     engate é capaz de suportar:
 
 $$
-n^{Vag}_{max} = \frac{F_{eng}}{R^{Vag}_t(V_{op})}
+n = \frac{F}{R}
 $$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
