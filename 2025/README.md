@@ -147,12 +147,6 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
-``` r
-# plot(v, Ft, type='l', col='red', lwd=2, 
-#      xlab='Velocidade [km/h]',
-#      ylab='Força Tratora [kN]')
-```
-
 É importante observar que este gráfico apresenta valores tendendo ao
 infinito nas extremidades, e sabemos que os motores tem limitações, a
 saber:
@@ -528,6 +522,8 @@ $$
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
     composição em termos de: $n_{Loc}$ locomotivas transportanto
     $n_{vag}$ vagões.
+
+> [**ATIVIDADE 3**](_atividades/ATV03.pdf)
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
