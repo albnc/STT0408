@@ -83,8 +83,28 @@ F_{t} = 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:  
-- $W$ o Trabalho da Força \[kW\]  
-- $F$ a resultante da Força \[kN\]  
+- $F$ força motriz \[kN\]  
+- $P$ a potência máxima do motor **\[kW\]**  
+- $v$ a velocidade do veículo \[km/h\]
+
+Para outras unidades temos:
+
+$$
+F_{t} = 2,685 \cdot \frac{P}{v}
+$$
+
+Em que:  
+- $F$ força motriz \[kN\]  
+- $P$ a potência máxima do motor **\[hp\]**  
+- $v$ a velocidade do veículo \[km/h\]
+
+$$
+F_{t} = 2,649 \cdot \frac{P}{v}
+$$
+
+Tal que:  
+- $F$ força motriz \[kN\]  
+- $P$ a potência máxima do motor **\[cv\]**  
 - $v$ a velocidade do veículo \[km/h\]
 
 ### Eficiência de Transmissão
@@ -472,7 +492,7 @@ Portanto o dimensionamento segue o seguinte procedimento:
 1.  Determine o **trecho crítico**, aclive mais íngreme;
 
 2.  Para este trecho, determine a velocidade de operação ($V_{op}$) a
-    ser adotada, lembrando que não se pode operar o trem abaixo da
+    ser adotada, lembrando que não se pode operar a locomotiva abaixo da
     **VMOC** – *Velocidade Mínima de Operação Constante*;
 
 3.  Para a $V_{op}$, determine a relação do ***número de vagões que uma
@@ -490,12 +510,19 @@ $$
 n^{Vag} = \frac{F_t(V_{op}) - R_t^{Loc}(V_{op})}{R_t^{Vag}(V_{op})}
 $$
 
+Esta última equação mostra que a **Força Disponível para tracionar os
+vagões** nada mais é do que a força resultante da diferença entre a
+Força Máxima do motor na Velocidade Operacional pela Resistência da
+Locomotiva.
+
 4.  Guarde esta relação: 1 Locomotiva $\rightarrow n^{Vag}$.
 
-5.  A partir da **Força Máxima do Engate** ($F_{eng}$), entre 1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o engate é capaz de suportar:
+5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de
+    1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
+    engate é capaz de suportar:
 
 $$ 
-n_{max.Vag} = \frac{F_{eng}}{R_t^{Vag}(V_{op})}
+n_{max.Vag} = \frac{F_{eng}}{R^{Vag}_t(V_{op})} 
 $$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
