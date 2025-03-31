@@ -516,7 +516,7 @@ Locomotiva.
     engate é capaz de suportar:
 
 $$ 
-n_{max.Vag} = \frac{F_{eng}}{R^{Vag}_{t}(V_{op})} 
+n_{max.Vag} = \frac{F_{eng}}{R_{t}^{Vag}(V_{op})} 
 $$
 
 6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
