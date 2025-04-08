@@ -550,7 +550,7 @@ Sendo:
 
 ### Força de aderência em caminhões
 
-A **Força Máxima de aderência** é o limite disponível para uso em determinado tipo de pavimento. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
+A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
 
 > [!CAUTION]
 > EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2 OU 6X4.
