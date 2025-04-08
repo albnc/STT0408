@@ -19,7 +19,7 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
   - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
   - [4. Força Motriz em Veículos Rodoviários](#4-força-motriz-em-veículos-rodoviários)
     - [Força Motriz em motor à combustão](#força-motriz-em-motor-à-combustão)
-    - [Força de aderência em caminhões](#força-de-aderência-em-caminhões)
+    - [Força de aderência em veículo rodoviário](#força-de-aderência-em-veículo-rodviário)
     - [Velocidade em caminhões](#velocidade-em-caminhões)
 
 # AULAS \| 2025
@@ -535,7 +535,7 @@ $$
 
 As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
 
-### Força motriz em motores à combustão
+### Força motriz em motor à combustão
 O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
 
 $$
@@ -548,7 +548,7 @@ Sendo:
 - $P$ a potência máxima do motor **\[kW\]**  
 - $v$ a velocidade do veículo \[km/h\]
 
-### Força de aderência em veículos rodoviárias
+### Força de aderência em veículo rodoviário
 
 A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
 
@@ -575,7 +575,7 @@ A seguir, uma tabela com fatores de aderência para diferentes tipos de paviment
 | Gelo                     |            0,10 |
 
 
-### Velocidade do caminhão
+### Velocidade em caminhões
 
 As diferenças no equacionamento de veículos ferroviários estão em: 
 
