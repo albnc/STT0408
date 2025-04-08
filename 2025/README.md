@@ -554,7 +554,7 @@ A **Força Máxima de aderência** é o limite disponível para uso em determina
 
 > [!CAUTION]
 > EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2 OU 6X4.
-> DIFERENTE DAS LOCOMOTIVAS, EM CAMINHÕES APENAS OS EIXOS MOTRIZES ENTRAM NA VARIÁVEL `PESO ADERENTE` ($T_{d}$).
+> DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
 
 A seguir, uma tabela com fatores de aderência para diferentes tipos de pavimentos.
 
