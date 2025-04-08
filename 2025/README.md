@@ -525,5 +525,70 @@ $$
 
 > [**ATIVIDADE 3**](_atividades/ATV03.pdf)
 
+------------------------------------------------------------------------
+
+## 4. Força Motriz em Veículos Rodoviários
+
+As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
+
+### Força motriz
+O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
+
+$$
+F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
+$$
+
+Sendo:  
+- $F$ força motriz \[kN\]
+- $\eta$ eficiência de transmissão (em torno de 0,82)
+- $P$ a potência máxima do motor **\[kW\]**  
+- $v$ a velocidade do veículo \[km/h\]
+
+### Força de aderência
+
+A **Força Máxima de aderência** é o limite disponível para uso em determinado tipo de pavimento. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
+
+> [!CAUTION]
+> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2 OU 6X4.
+> DIFERENTE DAS LOCOMOTIVAS, EM CAMINHÕES APENAS OS EIXOS MOTRIZES ENTRAM NA VARIÁVEL `PESO ADERENTE` ($T_{d}$).
+
+A seguir, uma tabela com fatores de aderência para diferentes tipos de pavimentos.
+
+| ***Superfície***         | ***Aderência*** |
+|:-------------------------|----------------:|
+| Asfalto ou concreto seco |    0,80 -- 0,90 |
+| Concreto molhado         |            0,80 |
+| Asfalto molhado          |    0,50 -- 0,70 |
+| Pedrisco                 |            0,60 |
+| Terra firme seca         |            0,70 |
+| Terra solta seca         |            0,45 |
+| Terra firma úmida        |            0,55 |
+| Areia seca               |            0,20 |
+| Areia úmida              |            0,40 |
+| Neve                     |            0,20 |
+| Gelo                     |            0,10 |
+
+
+### Velocidade veicular
+
+As diferenças no equacionamento de veículos ferroviários estão em: 
+
+  - Potência não constante, em função da rotação do motor;
+  - Caixa de câmbio, o que proporciona diferentes forças para cada marcha.
+
+Assim, é necessário calcular a velocidade que o motor consegue entregar, em função da marcha, da rotação do motor, do diferencial e do diâmetro do pneu:
+
+$$
+V = \frac{60 \cdot N}{g_{t} \cdot g_{d}} \cdot \frac{\pi \cdot D}{1000}
+$$
+
+Em que:
+  - $V$ : a velocidade do veículos [km/h]
+  - $N$ : a rotação do motor por minuto [rpm]
+  - $g_{t}$ : fator de redução da caixa de câmbio (um valor para cada marcha)
+  - $g_{d}$ : fator de redução do diferencial
+  - $D$ : diâmetro do pneu
+
+
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
