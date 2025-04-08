@@ -553,8 +553,10 @@ Sendo:
 A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
 
 > [!CAUTION]
-> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2 OU 6X4.
+> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU OUTRA CONFIGURAÇÃO.
 > DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
+
+!(cv-trucks)[\_img\cv-trucks.jpg]
 
 A seguir, uma tabela com fatores de aderência para diferentes tipos de pavimentos.
 
