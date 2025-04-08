@@ -8,9 +8,9 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     Ferroviários](#1-força-motriz-em-veículos-ferroviários)
     - [Forças Atuantes](#forças-atuantes)
     - [Equilíbrio de Forças](#equilíbrio-de-forças)
-    - [Força Motriz](#força-motriz)
+    - [Força Motriz em motores elétricos(#força-motriz-em-motores-elétricos)
     - [Eficiência de Transmissão](#eficiência-de-transmissão)
-    - [Tração por aderência](#tração-por-aderência)
+    - [Tração por aderência em locomotivas](#tração-por-aderência-em-locomotivas)
   - [2. Resistências ao Movimento](#2-resistências-ao-movimento)
     - [Resistência ao Rolamento](#resistência-ao-rolamento)
     - [Resistência Aerodinâmica](#resistência-aerodinâmica)
@@ -18,7 +18,7 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     - [Resistência de Curva](#resistência-de-curva)
   - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
   - [4. Força Motriz em Veículos Rodoviários](#4-força-motriz-em-veículos-rodoviários)
-    - [Força Motriz em caminhões](#força-motriz-em-caminhões)
+    - [Força Motriz em motor à combustão](#força-motriz-em-motor-à-combustão)
     - [Força de aderência em caminhões](#força-de-aderência-em-caminhões)
     - [Velocidade em caminhões](#velocidade-em-caminhões)
 
@@ -65,7 +65,7 @@ programação eficiente com planilhas.
 - $F_{t} > R_{t} \Rightarrow$ acelerando
 - $F_{t} = R_{t} \Rightarrow$ velocidade constante
 
-### Força Motriz
+### Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
@@ -203,7 +203,7 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-### Tração por aderência
+### Tração por aderência em locomotivas
 
 Para que as rodas da locomotiva não patine, a **Força Tratora** que o
 motor despeja nas rodas deve ser menor que a **Força de aderência**
@@ -535,7 +535,7 @@ $$
 
 As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
 
-### Força motriz em caminhões
+### Força motriz em motores à combustão
 O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
 
 $$
@@ -548,7 +548,7 @@ Sendo:
 - $P$ a potência máxima do motor **\[kW\]**  
 - $v$ a velocidade do veículo \[km/h\]
 
-### Força de aderência em caminhões
+### Força de aderência em veículos rodoviárias
 
 A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
 
