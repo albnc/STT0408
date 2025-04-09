@@ -8,15 +8,19 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     Ferroviários](#1-força-motriz-em-veículos-ferroviários)
     - [Forças Atuantes](#forças-atuantes)
     - [Equilíbrio de Forças](#equilíbrio-de-forças)
-    - [Força Motriz](#força-motriz)
+    - [Força Motriz em motores elétricos](#força-motriz-em-motores-elétricos)
     - [Eficiência de Transmissão](#eficiência-de-transmissão)
-    - [Tração por aderência](#tração-por-aderência)
+    - [Tração por aderência em locomotivas](#tração-por-aderência-em-locomotivas)
   - [2. Resistências ao Movimento](#2-resistências-ao-movimento)
     - [Resistência ao Rolamento](#resistência-ao-rolamento)
     - [Resistência Aerodinâmica](#resistência-aerodinâmica)
     - [Resistência de Rampa](#resistência-de-rampa)
     - [Resistência de Curva](#resistência-de-curva)
   - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
+  - [4. Força Motriz em Veículos Rodoviários](#4-força-motriz-em-veículos-rodoviários)
+    - [Força Motriz em motor à combustão](#força-motriz-em-motor-à-combustão)
+    - [Força de aderência em veículo rodoviário](#força-de-aderência-em-veículo-rodviário)
+    - [Velocidade em caminhões](#velocidade-em-caminhões)
 
 # AULAS \| 2025
 
@@ -61,7 +65,7 @@ programação eficiente com planilhas.
 - $F_{t} > R_{t} \Rightarrow$ acelerando
 - $F_{t} = R_{t} \Rightarrow$ velocidade constante
 
-### Força Motriz
+### Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
@@ -199,7 +203,7 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-### Tração por aderência
+### Tração por aderência em locomotivas
 
 Para que as rodas da locomotiva não patine, a **Força Tratora** que o
 motor despeja nas rodas deve ser menor que a **Força de aderência**
@@ -524,6 +528,73 @@ $$
     $n_{vag}$ vagões.
 
 > [**ATIVIDADE 3**](_atividades/ATV03.pdf)
+
+------------------------------------------------------------------------
+
+## 4. Força Motriz em Veículos Rodoviários
+
+As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
+
+### Força motriz em motor à combustão
+O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
+
+$$
+F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
+$$
+
+Sendo:  
+- $F$ força motriz \[kN\]
+- $\eta$ eficiência de transmissão (em torno de 0,82)
+- $P$ a potência máxima do motor **\[kW\]**  
+- $v$ a velocidade do veículo \[km/h\]
+
+### Força de aderência em veículo rodoviário
+
+A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
+
+> [!CAUTION]
+> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU OUTRA CONFIGURAÇÃO.
+> DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
+
+!(cv-trucks)[_img/cv-trucks.jpg]
+
+A seguir, uma tabela com fatores de aderência para diferentes tipos de pavimentos.
+
+| ***Superfície***         | ***Aderência*** |
+|:-------------------------|----------------:|
+| Asfalto ou concreto seco |    0,80 -- 0,90 |
+| Concreto molhado         |            0,80 |
+| Asfalto molhado          |    0,50 -- 0,70 |
+| Pedrisco                 |            0,60 |
+| Terra firme seca         |            0,70 |
+| Terra solta seca         |            0,45 |
+| Terra firma úmida        |            0,55 |
+| Areia seca               |            0,20 |
+| Areia úmida              |            0,40 |
+| Neve                     |            0,20 |
+| Gelo                     |            0,10 |
+
+
+### Velocidade em caminhões
+
+As diferenças no equacionamento de veículos ferroviários estão em: 
+
+  - Potência não constante, em função da rotação do motor;
+  - Caixa de câmbio, o que proporciona diferentes forças para cada marcha.
+
+Assim, é necessário calcular a velocidade que o motor consegue entregar, em função da marcha, da rotação do motor, do diferencial e do diâmetro do pneu:
+
+$$
+V = \frac{60 \cdot N}{g_{t} \cdot g_{d}} \cdot \frac{\pi \cdot D}{1000}
+$$
+
+Em que:
+  - $V$ : a velocidade do veículos [km/h]
+  - $N$ : a rotação do motor por minuto [rpm]
+  - $g_{t}$ : fator de redução da caixa de câmbio (um valor para cada marcha)
+  - $g_{d}$ : fator de redução do diferencial
+  - $D$ : diâmetro do pneu
+
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
