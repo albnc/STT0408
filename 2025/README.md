@@ -444,7 +444,9 @@ $$
 V = \frac{60 \cdot N}{g_{t} \cdot g_{d}} \cdot \frac{\pi \cdot D}{1000}
 $$
 
-Em que: - $V$ : a velocidade do veículos \[km/h\]
+Em que:
+
+- $V$ : a velocidade do veículos \[km/h\]
 
 - $N$ : a rotação do motor por minuto \[rpm\]
 
@@ -468,7 +470,8 @@ $$
 R_t = R_r + R_a + R_g
 $$
 
-Sendo,  
+Sendo,
+
 - $R_t$ : resistência total \[kN\]
 
 - $R_r$ : resistência ao rolamento \[kN\]
@@ -490,7 +493,8 @@ $$
 R_r = \left( c_1 + c_2 \cdot V \right) \cdot \frac{G}{1000}
 $$
 
-Em que,  
+Em que,
+
 - $R_r$ : resistência ao rolamento \[kN\]
 
 - $G$ : peso do veículo \[kN\]
@@ -511,7 +515,8 @@ $$
 R_a = \frac{c_a \cdot A \cdot V^2}{1000}
 $$
 
-Tal que,  
+Tal que,
+
 - $R_a$ : resistência aerodinâmica \[kN\]
 
 - $c_a$ : coeficiente de penetração aerodinâmico [^4]
