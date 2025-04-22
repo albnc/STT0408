@@ -8,19 +8,30 @@ Prof. André Luiz Cunha, Prof. José Reynaldo Setti
     Ferroviários](#1-força-motriz-em-veículos-ferroviários)
     - [Forças Atuantes](#forças-atuantes)
     - [Equilíbrio de Forças](#equilíbrio-de-forças)
-    - [Força Motriz em motores elétricos](#força-motriz-em-motores-elétricos)
+    - [Força Motriz em motores
+      elétricos](#força-motriz-em-motores-elétricos)
     - [Eficiência de Transmissão](#eficiência-de-transmissão)
-    - [Tração por aderência em locomotivas](#tração-por-aderência-em-locomotivas)
-  - [2. Resistências ao Movimento](#2-resistências-ao-movimento)
+    - [Tração por aderência em
+      locomotivas](#tração-por-aderência-em-locomotivas)
+  - [2. Resistências em Veículos
+    Ferroviários](#2-resistências-em-veículos-ferroviários)
     - [Resistência ao Rolamento](#resistência-ao-rolamento)
     - [Resistência Aerodinâmica](#resistência-aerodinâmica)
     - [Resistência de Rampa](#resistência-de-rampa)
     - [Resistência de Curva](#resistência-de-curva)
   - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
-  - [4. Força Motriz em Veículos Rodoviários](#4-força-motriz-em-veículos-rodoviários)
-    - [Força Motriz em motor à combustão](#força-motriz-em-motor-à-combustão)
-    - [Força de aderência em veículo rodoviário](#força-de-aderência-em-veículo-rodoviário)
+  - [4. Força Motriz em Veículos
+    Rodoviários](#4-força-motriz-em-veículos-rodoviários)
+    - [Força motriz em motor à
+      combustão](#força-motriz-em-motor-à-combustão)
+    - [Força de aderência em veículo
+      rodoviário](#força-de-aderência-em-veículo-rodoviário)
     - [Velocidade em caminhões](#velocidade-em-caminhões)
+  - [5. Resistências em Veículos
+    Rodoviários](#5-resistências-em-veículos-rodoviários)
+    - [Resistência ao Rolamento](#resistência-ao-rolamento-1)
+    - [Resistência Aerodinâmica](#resistência-aerodinâmica-1)
+    - [Resistência de Rampa](#resistência-de-rampa-1)
 
 # AULAS \| 2025
 
@@ -125,29 +136,11 @@ $$
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência**
 constante de, por exemplo, $1.500$ kW será de:
 
-``` r
-# Potência em kW
-P = 1500
-# Eficiência
-n = 0.82
-# Velocidades em km/h
-v = 1:150
-
-Ft = n * 3.6 * ( P / v )
-
-df <- data.frame(v = v, 
-                 Ft = Ft)
-
-df |> ggplot(aes(x=v, y=Ft)) +
-  geom_line(color='red', linewidth=1) +
-  scale_x_continuous(breaks=seq(0,140,20)) +
-  scale_y_continuous(breaks=seq(0,3000,500)) +
-  xlab("Velocidade [km/h]") +
-  ylab("Força Tratora [kN]") +
-  labs(title = "Força Motriz em Locomotiva",
-       subtitle = paste("Exemplo de motor com Potência de",P,"kW")) +
-  theme_bw()
-```
+$$
+F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{v_i}
+$$ $$
+F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
+$$
 
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
@@ -155,51 +148,20 @@ df |> ggplot(aes(x=v, y=Ft)) +
 infinito nas extremidades, e sabemos que os motores tem limitações, a
 saber:
 
-1.  da corrente elétrica (máxima força tratora disponível) no eixo Y,  
+1.  da corrente elétrica (máxima força tratora disponível) no eixo Y,
 2.  da voltagem ou rotação do motor (máxima velocidade disponível) no
     eixo X.
 
 Dessa forma, a função anterior fica limita a esses dois limites. Como
 exemplo, considere a velocidade máxima de 90 km/h e a força tratora
-máxima pela corrente elétrica, limitada pela **Velocidade Mínima de
-Operação Constante** (VMOC) de 20 km/h.
+máxima pela corrente elétrica ($F_{CE}$), limitada pela **Velocidade
+Mínima de Operação Constante** (VMOC) de 20 km/h.
 
-``` r
-# Potência em kW
-P = 1500
-# Eficiência
-n = 0.82
-# Limite da voltagem/rotação do motor
-vmax = 90 #km/h
-# Velocidades em km/h
-v = 1:vmax
-# Limite da corrente elétrica - VMOC
-VMOC = 20 #km/h
-Ftce = n * 3.6 * (P / VMOC) #kN
-
-## EQUAÇAO
-Ft = n * 3.6 * ( P / v )
-# LIMITE
-Ft[Ft > Ftce] = Ftce
-
-# Acrescentar o último ponto para fechar o limite.
-v <- c(v, vmax)
-Ft <- c(Ft, 0)
-
-df <- data.frame(v = v,
-                 Ft = Ft)
-
-## Plotar
-df |> ggplot(aes(x=v, y=Ft)) +
-  geom_line(color='red', linewidth=1) +
-  scale_x_continuous(breaks=seq(0,vmax,10)) +
-  scale_y_continuous(breaks=seq(0,round(Ftce/5,0)*5,20)) +
-  xlab("Velocidade [km/h]") +
-  ylab("Força Tratora [kN]") +
-  labs(title = "Força Motriz em Locomotiva",
-       subtitle = paste("Exemplo de motor com Potência de",P,"kW")) +
-  theme_bw()
-```
+$$
+F_{CE} = \eta \cdot 3,6 \cdot \frac{P}{VMOC} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{20}
+$$ $$
+F_{CE} = 221.4~kN
+$$
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
@@ -241,59 +203,13 @@ aderência* $f$ para várias condições do trilho.
 Considere uma locomotiva com Peso Bruto Total de 100 toneladas e um
 fator de aderência $f$ de 0,20, portanto:
 
-``` r
-# Potência em kW
-P = 1500
-# Eficiência
-n = 0.82
-# Limite da voltagem/rotação do motor
-vmax = 90 #km/h
-# Velocidades em km/h
-v = 1:vmax
-# Limite da corrente elétrica - VMOC
-VMOC = 20 #km/h
-Ftce = n * 3.6 * (P / VMOC) #kN
-# Peso Bruto [t]
-M = 100 #t
-# Peso Bruto em [kN]
-G = M * 10 # g (gravidade) = 10 m/s²
-# Fator de aderência
-f = 0.20
+$$
+Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10)
+$$
 
-
-## EQUAÇAO
-Ft = n * 3.6 * ( P / v )
-# LIMITE
-Ft[Ft > Ftce] = Ftce
-
-# Acrescentar o último ponto para fechar o limite.
-v <- c(v, vmax)
-Ft <- c(Ft, 0)
-
-# Aderência Máxima
-Ftmax = G * f
-
-# Força de Aderência
-
-df <- data.frame(v = v,
-                 Ft = Ft,
-                 Ftmax = Ftmax)
-
-## Plotar
-colors <- c("Ft" = "red", "Ftmax" = "blue")
-df |> ggplot(aes(x=v)) +
-  geom_line(aes(y=Ft, color='Ft'), linewidth=1) +
-  geom_line(aes(y=Ftmax, color='Ftmax'), linewidth=1)+
-  scale_x_continuous(breaks=seq(0,vmax,10)) +
-  scale_y_continuous(breaks=seq(0,round(Ftce/5,0)*5,20)) +
-  labs( title = "Força Motriz em Locomotiva",
-        subtitle = paste("Exemplo de Locomotiva com Potência de",P,"kW e Peso Bruto de ",M, "t"),
-        x = "Velocidade [km/h]",
-        y = "Força Tratora [kN]",
-        color="Legend" ) +
-  theme_bw() +
-  scale_color_manual(values = colors)
-```
+$$
+Ft_{max} = 200~kN
+$$
 
 ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
@@ -301,7 +217,7 @@ df |> ggplot(aes(x=v)) +
 
 ------------------------------------------------------------------------
 
-## 2. Resistências ao Movimento
+## 2. Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser
 representadas por:
@@ -326,7 +242,7 @@ Básica*** ou ***Resistência Inerente***.
 Segundo o modelo proposto por Davis (1910):
 
 $$
-R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 * V \right) \cdot \frac{G}{1000}
+R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 \cdot V \right) \cdot \frac{G}{1000}
 $$
 
 Em que,  
@@ -350,7 +266,7 @@ $$
 
 Tal que,  
 - $R_a$ : resistência aerodinâmica \[kN\]  
-- $c_a$ : coeficiente aerodinâmico  
+- $c_a$ : coeficiente aerodinâmico [^2]  
 - $A$ : área frontal do veículo \[m²\]
 
 | **Tipo de veículo**       | **Área frontal (m²)** | **$c_a$** |
@@ -391,82 +307,6 @@ Considere uma locomotiva descrita anteriormente, área frontal de 10 m² e
 8 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem
 curva. Utilizando as equações e parâmetros anteriores teremos:
 
-``` r
-## CONSTANTES
-# Gravidade
-g = 10 #m/s²
-
-## LOCOMOTIVA:
-# Número de locomotivas
-nL = 1
-# Número de eixos da locomotiva
-xL = 6
-# Área frontal da locomotiva
-AL = 9.0 #m²
-# Potência em kW
-P = 1500
-# Eficiência
-eta = 0.82
-# Limite da voltagem/rotação do motor
-vmax = 90 #km/h
-# Limite da corrente elétrica - VMOC
-VMOC = 20 #km/h
-# Força Tratora Máxima da Corrente Elétrica
-Ftce = eta * 3.6 * (P / VMOC) #kN
-# Massa da Locomotiva [t]
-mL = 100 #t
-# Peso Bruto em [kN]
-GL = mL * 10 # g (gravidade) = 10 m/s²
-# Fator de aderência
-f = 0.20
-
-## VAGÕES
-# Número de vagões
-nV = 10
-# Número de eixos do vagão
-xV = 4
-# Área frontal ddo vagão
-AV = 8.0 #m²
-# Massa de cada vagão
-mV = 80 # t
-# Peso Bruto do vagão em [kN]
-GV = mV * g #kN
-
-## DATAFRAME
-df <- data.frame(
-  V     = c(1:vmax,vmax),
-  FtCE  = Ftce
-  ) %>% 
-  rowwise(V) %>% 
-  mutate(
-    FtMotor  = nL * (eta * 3.6 * P / V),
-    Ft       = min(FtCE,FtMotor),
-    Ftmax    = nL * (f * GL),
-    R_Loc    = ((0.65 + (125 * xL) / GL + 0.009 * GL ) * GL / 1000) + (0.046 * AL * V * V)/1000,
-    R_Vag    = ((0.65 + (125 * xV) / GV + 0.013 * GV ) * GV / 1000) + (0.009 * AV * V * V)/1000,
-    Rt_plano = nL * R_Loc + nV * R_Vag,
-    Rt_aclive= Rt_plano + 0.01 * (nL * GL + nV * GV)
-  )
-df$Ft[nrow(df)] = 0.0
-
-## Plotar
-colors <- c("Ft" = "blue", "Ftmax" = "cyan", "Rt_0%" = "orange", "Rt_1%" = "red")
-df |> ggplot(aes(x=V)) +
-  geom_line(aes(y=Ft, color='Ft'), linewidth=1) +
-  geom_line(aes(y=Ftmax, color='Ftmax'), linewidth=1)+
-  geom_line(aes(y=Rt_plano, color='Rt_0%'), linewidth=1)+
-  geom_line(aes(y=Rt_aclive, color='Rt_1%'), linewidth=1)+
-  scale_x_continuous(breaks=seq(0,vmax,10)) +
-  scale_y_continuous(breaks=seq(0,round(max(df$Ft)/5,0)*5,20)) +
-  labs( title = "Força Tratora da Locomotiva vs. Resistências do Trem",
-        subtitle = paste("Exemplo com", nL, "Locomotiva(s) e", nV, "vagões"),
-        x = "Velocidade [km/h]",
-        y = "Força Tratora [kN]",
-        color="Legend" ) +
-  theme_bw() +
-  scale_color_manual(values = colors)
-```
-
 ![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
 
 Perceba que no trecho plano, a velocidade de equilíbrio para o trem do
@@ -477,6 +317,8 @@ cruzando com a curva da Froça Tratora ($F_t$). Lembre-se que toda a área
 abaixo da curva de $F_t$ é possível de ser operada.
 
 > [**ATIVIDADE 2**](_atividades/ATV02.pdf)
+
+------------------------------------------------------------------------
 
 ## 3. Comprimento máximo do trem
 
@@ -533,38 +375,46 @@ $$
 
 ## 4. Força Motriz em Veículos Rodoviários
 
-As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
+As equações de Força Motriz seguem os mesmos princípios de **Veículos
+Ferroviárias**.
 
 ### Força motriz em motor à combustão
-O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
+
+O cálculo da Força Motriz nos indica as forças que o motor é capaz de
+gerar.
 
 $$
 F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:  
-- $F$ força motriz \[kN\]
-- $\eta$ eficiência de transmissão (em torno de 0,82)
-- $P$ a potência máxima do motor **\[kW\]**  
+- $F$ força motriz \[kN\] - $\eta$ eficiência de transmissão (em torno
+de 0,82) - $P$ a potência máxima do motor **\[kW\]**  
 - $v$ a velocidade do veículo \[km/h\]
 
 ### Força de aderência em veículo rodoviário
 
-A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
+A **Força Máxima de aderência** é o limite disponível que determinado
+tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma
+força maior que a **Força Máxima de aderência**, o veículo irá patinar.
+Portanto é função do fator de aderência ($f$) e do **Peso aderente**
+($T_{d}$).
 
-> [!CAUTION]
-> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU OUTRA CONFIGURAÇÃO.
-> DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
+> \[!CAUTION\] EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE
+> EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU
+> OUTRA CONFIGURAÇÃO. DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS
+> OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
 
 ![cv-trucks](_img/cv-trucks.jpg)
 
-A seguir, uma tabela com fatores de aderência para diferentes tipos de pavimentos.
+A seguir, uma tabela [^3] com fatores de aderência para diferentes tipos
+de pavimentos.
 
 | ***Superfície***         | ***Aderência*** |
 |:-------------------------|----------------:|
-| Asfalto ou concreto seco |    0,80 -- 0,90 |
+| Asfalto ou concreto seco |     0,80 – 0,90 |
 | Concreto molhado         |            0,80 |
-| Asfalto molhado          |    0,50 -- 0,70 |
+| Asfalto molhado          |     0,50 – 0,70 |
 | Pedrisco                 |            0,60 |
 | Terra firme seca         |            0,70 |
 | Terra solta seca         |            0,45 |
@@ -574,29 +424,105 @@ A seguir, uma tabela com fatores de aderência para diferentes tipos de paviment
 | Neve                     |            0,20 |
 | Gelo                     |            0,10 |
 
-
 ### Velocidade em caminhões
 
-As diferenças no equacionamento de veículos ferroviários estão em: 
+As diferenças no equacionamento de veículos ferroviários estão em:
 
-  - Potência não constante, em função da rotação do motor;
-  - Caixa de câmbio, o que proporciona diferentes forças para cada marcha.
+- Potência não constante, em função da rotação do motor;
+- Caixa de câmbio, o que proporciona diferentes forças para cada marcha.
 
-Assim, é necessário calcular a velocidade que o motor consegue entregar, em função da marcha, da rotação do motor, do diferencial e do diâmetro do pneu:
+Assim, é necessário calcular a velocidade que o motor consegue entregar,
+em função da marcha, da rotação do motor, do diferencial e do diâmetro
+do pneu:
 
 $$
 V = \frac{60 \cdot N}{g_{t} \cdot g_{d}} \cdot \frac{\pi \cdot D}{1000}
 $$
 
-Em que:
-  - $V$ : a velocidade do veículos [km/h]
-  - $N$ : a rotação do motor por minuto [rpm]
-  - $g_{t}$ : fator de redução da caixa de câmbio (um valor para cada marcha)
-  - $g_{d}$ : fator de redução do diferencial
-  - $D$ : diâmetro do pneu
-
+Em que: - $V$ : a velocidade do veículos \[km/h\] - $N$ : a rotação do
+motor por minuto \[rpm\] - $g_{t}$ : fator de redução da caixa de câmbio
+(um valor para cada marcha) - $g_{d}$ : fator de redução do
+diferencial - $D$ : diâmetro do pneu
 
 > [**ATIVIDADE 4**](_atividades/ATV04.pdf)
 
+------------------------------------------------------------------------
+
+## 5. Resistências em Veículos Rodoviários
+
+As forças resistivas ao movimento de um veículo rodoviário é composta de
+três parcelas a saber:
+
+$$
+R_t = R_r + R_a + R_g
+$$
+
+Sendo,  
+- $R_t$ : resistência total \[kN\]  
+- $R_r$ : resistência ao rolamento \[kN\]  
+- $R_a$ : resistência aerodinâmica \[kN\]  
+- $R_g$ : resistência de rampa \[kN\]
+
+Dentre as parcelas, as resistências **ao rolamento e aerodinâmica**
+sempre existirão, portanto é denominado de ***Resistência Básica*** ou
+***Resistência Inerente***.
+
+### Resistência ao Rolamento
+
+A resistência de rolamento para veículos rodoviários pode ser estimada
+pela seguinte equação:
+
+$$
+R_r = \left( c_1 + c_2 \cdot V \right) \cdot \frac{G}{1000}
+$$
+
+Em que,  
+- $R_r$ : resistência ao rolamento \[kN\]  
+- $G$ : peso do veículo \[kN\]  
+- $V$ : velocidade do veículo \[km/h\]  
+- $c_1$ : constante que incorpora o efeito da deformação do pneu no
+pavimento (rodovias pavimentadas – asfalto ou concreto) $\approx 7,6$  
+- $c_2$ : constante que reflete o efeito de outros fatores na
+resistência ($\approx 0,056$)
+
+### Resistência Aerodinâmica
+
+O modelo simplificado de resitência aerodinâmica é:
+
+$$
+R_a = \frac{c_a \cdot A \cdot V^2}{1000}
+$$
+
+Tal que,  
+- $R_a$ : resistência aerodinâmica \[kN\]  
+- $c_a$ : coeficiente de penetração aerodinâmico [^4]  
+- $A$ : área frontal do veículo \[m²\]
+
+| **Veículo** | **Área frontal (m²)** |     **$c_a$** |
+|:------------|:----------------------|--------------:|
+| Automóveis  | 2,5 – 3,5             | 0,020 a 0,025 |
+| Ônibus      | 7,0 – 9,0             | 0,035 a 0,040 |
+| Caminhões   | 6,0 – 9,0             | 0,028 a 0,040 |
+
+### Resistência de Rampa
+
+$$
+R_g = G \cdot i
+$$
+
+Em que,  
+- $R_g$ : resistência de rampa em \[kN\]  
+- $G$ : peso do veículo \[kN\]  
+- $i$ : declividade da rampa \[% – em decimal\]
+
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
+
+[^2]: Setti, J.R. (2002) *Tecnologia de Transportes*. Notas de aula,
+    USP-EESC.
+
+[^3]: Setti, J.R. (2002) *Tecnologia de Transportes*. Notas de aula,
+    USP-EESC.
+
+[^4]: Setti, J.R. (2002) *Tecnologia de Transportes*. Notas de aula,
+    USP-EESC.
