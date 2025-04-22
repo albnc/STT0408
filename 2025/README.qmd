@@ -522,16 +522,20 @@ $$
 
 Sendo:  
 - $F$ força motriz \[kN\]
+
 - $\eta$ eficiência de transmissão (em torno de 0,82)
-- $P$ a potência máxima do motor **\[kW\]**  
+
+- $P$ a potência máxima do motor **\[kW\]**
+
 - $v$ a velocidade do veículo \[km/h\]
 
 ### Força de aderência em veículo rodoviário
 
 A **Força Máxima de aderência** é o limite disponível que determinado tipo de pavimento oferece para o uso, ou seja, se o veículo aplicar uma força maior que a **Força Máxima de aderência**, o veículo irá patinar. Portanto é função do fator de aderência ($f$) e do **Peso aderente** ($T_{d}$).
 
-> [!CAUTION]
-> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU OUTRA CONFIGURAÇÃO.
+> \[!CAUTION\]
+> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE EIXOS MOTRIZES.
+> VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU OUTRA CONFIGURAÇÃO.
 > DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
 
 ![cv-trucks](_img/cv-trucks.jpg)
@@ -568,9 +572,13 @@ $$
 
 Em que:
   - $V$ : a velocidade do veículos [km/h]
+  
   - $N$ : a rotação do motor por minuto [rpm]
+  
   - $g_{t}$ : fator de redução da caixa de câmbio (um valor para cada marcha)
+  
   - $g_{d}$ : fator de redução do diferencial
+  
   - $D$ : diâmetro do pneu
 
 > [**ATIVIDADE 4**](_atividades/ATV04.pdf)
@@ -587,9 +595,12 @@ R_t = R_r + R_a + R_g
 $$
 
 Sendo,  
-- $R_t$ : resistência total \[kN\]  
-- $R_r$ : resistência ao rolamento \[kN\]  
-- $R_a$ : resistência aerodinâmica \[kN\]  
+- $R_t$ : resistência total \[kN\]
+
+- $R_r$ : resistência ao rolamento \[kN\]
+
+- $R_a$ : resistência aerodinâmica \[kN\]
+
 - $R_g$ : resistência de rampa \[kN\]  
 
 Dentre as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, portanto é denominado de ***Resistência Básica*** ou ***Resistência Inerente***.
@@ -603,10 +614,14 @@ R_r = \left( c_1 + c_2 \cdot V \right) \cdot \frac{G}{1000}
 $$
 
 Em que,  
-- $R_r$ : resistência ao rolamento \[kN\]  
-- $G$ : peso do veículo \[kN\]  
-- $V$ : velocidade do veículo \[km/h\]  
-- $c_1$ : constante que incorpora o efeito da deformação do pneu no pavimento (rodovias pavimentadas -- asfalto ou concreto) $\approx 7,6$  
+- $R_r$ : resistência ao rolamento \[kN\]
+
+- $G$ : peso do veículo \[kN\]
+
+- $V$ : velocidade do veículo \[km/h\]
+
+- $c_1$ : constante que incorpora o efeito da deformação do pneu no pavimento (rodovias pavimentadas -- asfalto ou concreto) $\approx 7,6$
+
 - $c_2$ : constante que reflete o efeito de outros fatores na resistência ($\approx 0,056$)  
 
 ### Resistência Aerodinâmica
@@ -618,8 +633,10 @@ R_a = \frac{c_a \cdot A \cdot V^2}{1000}
 $$
 
 Tal que,  
-- $R_a$ : resistência aerodinâmica \[kN\]  
-- $c_a$ : coeficiente de penetração aerodinâmico [^tab.A]  
+- $R_a$ : resistência aerodinâmica \[kN\]
+
+- $c_a$ : coeficiente de penetração aerodinâmico [^tab.A]
+
 - $A$ : área frontal do veículo \[m²\]
 
 | **Veículo**      | **Área frontal (m²)** | **$c_a$**     |
