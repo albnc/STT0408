@@ -400,7 +400,8 @@ força maior que a **Força Máxima de aderência**, o veículo irá patinar.
 Portanto é função do fator de aderência ($f$) e do **Peso aderente**
 ($T_{d}$).
 
-> \[!CAUTION\] EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE
+> [!CAUTION]
+> EM CAMINHÕES, O PESO ADERENTE É FUNÇÃO DA QUANTIDADE DE
 > EIXOS MOTRIZES. VERIFIQUE SE O CAMINHÃO É DO TIPO: 4X2, 6X2, 6X4 OU
 > OUTRA CONFIGURAÇÃO. DIFERENTE DAS LOCOMOTIVAS, **EM CAMINHÕES APENAS
 > OS EIXOS MOTRIZES SÃO COMPUTADOS NO `PESO ADERENTE` ($T_{d}$)**.
