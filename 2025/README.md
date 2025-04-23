@@ -230,7 +230,7 @@ aderência* $f$ para várias condições do trilho.
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
 
-Coeficientes de aderência para condições do trilho
+*Coeficientes de aderência para condições do trilho*
 
 ------------------------------------------------------------------------
 
@@ -327,7 +327,7 @@ Tal que,
 | Vagões de carga           | 7,5 – 8,5             |     0,009 |
 | Carros de passageiros     | 10 – 11               |     0,006 |
 
-Coeficiente aerodinâmico para veículos ferroviários
+*Coeficientes aerodinâmico para veículos ferroviários*
 
 ### Resistência de Rampa
 
@@ -489,7 +489,7 @@ de pavimentos.
 | Neve                     |            0,20 |
 | Gelo                     |            0,10 |
 
-Fatores de aderência para pavimentos rodoviários
+*Fatores de aderência para pavimentos rodoviários*
 
 ### Velocidade em caminhões
 
@@ -589,7 +589,7 @@ Tal que,
 | Ônibus      | 7,0 – 9,0             | 0,035 a 0,040 |
 | Caminhões   | 6,0 – 9,0             | 0,028 a 0,040 |
 
-Coeficientes aerodinâmicos para veículos rodoviários
+*Coeficientes aerodinâmicos para veículos rodoviários*
 
 ### Resistência de Rampa
 
