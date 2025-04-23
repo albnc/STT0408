@@ -1,41 +1,56 @@
 # STT0408 - Fundamentos de Engenharia de Transportes
 Prof. André Luiz Cunha, Prof. José Reynaldo Setti
 
-- [AULAS \| 2025](#aulas--2025)
-  - [0. Revisão de Planilhas
-    Eletrônicas](#0-revisão-de-planilhas-eletrônicas)
-  - [1. Força Motriz em Veículos
-    Ferroviários](#1-força-motriz-em-veículos-ferroviários)
-    - [Forças Atuantes](#forças-atuantes)
-    - [Equilíbrio de Forças](#equilíbrio-de-forças)
-    - [Força Motriz em motores
-      elétricos](#força-motriz-em-motores-elétricos)
-    - [Eficiência de Transmissão](#eficiência-de-transmissão)
-    - [Tração por aderência em
-      locomotivas](#tração-por-aderência-em-locomotivas)
-  - [2. Resistências em Veículos
-    Ferroviários](#2-resistências-em-veículos-ferroviários)
-    - [Resistência ao Rolamento](#resistência-ao-rolamento)
-    - [Resistência Aerodinâmica](#resistência-aerodinâmica)
-    - [Resistência de Rampa](#resistência-de-rampa)
-    - [Resistência de Curva](#resistência-de-curva)
-  - [3. Comprimento máximo do trem](#3-comprimento-máximo-do-trem)
-  - [4. Força Motriz em Veículos
-    Rodoviários](#4-força-motriz-em-veículos-rodoviários)
-    - [Força motriz em motor à
-      combustão](#força-motriz-em-motor-à-combustão)
-    - [Força de aderência em veículo
-      rodoviário](#força-de-aderência-em-veículo-rodoviário)
-    - [Velocidade em caminhões](#velocidade-em-caminhões)
-  - [5. Resistências em Veículos
-    Rodoviários](#5-resistências-em-veículos-rodoviários)
-    - [Resistência ao Rolamento](#resistência-ao-rolamento-1)
-    - [Resistência Aerodinâmica](#resistência-aerodinâmica-1)
-    - [Resistência de Rampa](#resistência-de-rampa-1)
+- [<span class="toc-section-number">1</span> Revisão de Planilhas
+  Eletrônicas](#revisão-de-planilhas-eletrônicas)
+- [<span class="toc-section-number">2</span> Veículos
+  Ferroviários](#veículos-ferroviários)
+  - [<span class="toc-section-number">2.1</span> Força Motriz em
+    Veículos Ferroviários](#força-motriz-em-veículos-ferroviários)
+    - [<span class="toc-section-number">2.1.1</span> Forças
+      Atuantes](#forças-atuantes)
+    - [<span class="toc-section-number">2.1.2</span> Equilíbrio de
+      Forças](#equilíbrio-de-forças)
+    - [<span class="toc-section-number">2.1.3</span> Força Motriz em
+      motores elétricos](#força-motriz-em-motores-elétricos)
+    - [<span class="toc-section-number">2.1.4</span> Eficiência de
+      Transmissão](#eficiência-de-transmissão)
+    - [<span class="toc-section-number">2.1.5</span> Tração por
+      aderência em locomotivas](#tração-por-aderência-em-locomotivas)
+  - [<span class="toc-section-number">2.2</span> Resistências em
+    Veículos Ferroviários](#resistências-em-veículos-ferroviários)
+    - [<span class="toc-section-number">2.2.1</span> Resistência ao
+      Rolamento](#resistência-ao-rolamento)
+    - [<span class="toc-section-number">2.2.2</span> Resistência
+      Aerodinâmica](#resistência-aerodinâmica)
+    - [<span class="toc-section-number">2.2.3</span> Resistência de
+      Rampa](#resistência-de-rampa)
+    - [<span class="toc-section-number">2.2.4</span> Resistência de
+      Curva](#resistência-de-curva)
+  - [<span class="toc-section-number">2.3</span> Comprimento máximo do
+    trem](#comprimento-máximo-do-trem)
+- [<span class="toc-section-number">3</span> Veículos
+  Rodoviários](#veículos-rodoviários)
+  - [<span class="toc-section-number">3.1</span> Força Motriz em
+    Veículos Rodoviários](#força-motriz-em-veículos-rodoviários)
+    - [<span class="toc-section-number">3.1.1</span> Força motriz em
+      motor à combustão](#força-motriz-em-motor-à-combustão)
+    - [<span class="toc-section-number">3.1.2</span> Força de aderência
+      em veículo rodoviário](#força-de-aderência-em-veículo-rodoviário)
+    - [<span class="toc-section-number">3.1.3</span> Velocidade em
+      caminhões](#velocidade-em-caminhões)
+  - [<span class="toc-section-number">3.2</span> Resistências em
+    Veículos Rodoviários](#resistências-em-veículos-rodoviários)
+    - [<span class="toc-section-number">3.2.1</span> Resistência ao
+      Rolamento](#resistência-ao-rolamento-1)
+    - [<span class="toc-section-number">3.2.2</span> Resistência
+      Aerodinâmica](#resistência-aerodinâmica-1)
+    - [<span class="toc-section-number">3.2.3</span> Resistência de
+      Rampa](#resistência-de-rampa-1)
 
-# AULAS \| 2025
+------------------------------------------------------------------------
 
-## 0. Revisão de Planilhas Eletrônicas
+# Revisão de Planilhas Eletrônicas
 
 **Objetivo**  
 Aula introdutória e de nivelamento em programação aplicada a planilhas
@@ -59,7 +74,11 @@ programação eficiente com planilhas.
   Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*” -
   Mike Girvin
 
-## 1. Força Motriz em Veículos Ferroviários
+------------------------------------------------------------------------
+
+# Veículos Ferroviários
+
+## Força Motriz em Veículos Ferroviários
 
 ### Forças Atuantes
 
@@ -215,9 +234,7 @@ $$
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
-------------------------------------------------------------------------
-
-## 2. Resistências em Veículos Ferroviários
+## Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser
 representadas por:
@@ -318,9 +335,7 @@ abaixo da curva de $F_t$ é possível de ser operada.
 
 > [**ATIVIDADE 2**](_atividades/ATV02.pdf)
 
-------------------------------------------------------------------------
-
-## 3. Comprimento máximo do trem
+## Comprimento máximo do trem
 
 Para determinar o máximo comprimento que um trem pode trafegar, é
 necessário analisar o **trecho mais crítico**, ou seja, a rampa mais
@@ -373,7 +388,9 @@ $$
 
 ------------------------------------------------------------------------
 
-## 4. Força Motriz em Veículos Rodoviários
+# Veículos Rodoviários
+
+## Força Motriz em Veículos Rodoviários
 
 As equações de Força Motriz seguem os mesmos princípios de **Veículos
 Ferroviárias**.
@@ -459,9 +476,7 @@ Em que:
 
 > [**ATIVIDADE 4**](_atividades/ATV04.pdf)
 
-------------------------------------------------------------------------
-
-## 5. Resistências em Veículos Rodoviários
+## Resistências em Veículos Rodoviários
 
 As forças resistivas ao movimento de um veículo rodoviário é composta de
 três parcelas a saber:

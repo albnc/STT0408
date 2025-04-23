@@ -3,18 +3,17 @@ title: "STT0408 - Fundamentos de Engenharia de Transportes"
 author:
   - name: "Prof. André Luiz Cunha"
   - name: "Prof. José Reynaldo Setti"
-
+Date: "2025"
 format: 
   gfm:
     toc: true
+    number-sections: true
     tbl-cap-location: top
 ---
 
+------------------------------------------------------------------------
 
-# AULAS | 2025
-
-
-## 0. Revisão de Planilhas Eletrônicas
+# Revisão de Planilhas Eletrônicas
 
 **Objetivo**
 : Aula introdutória e de nivelamento em programação aplicada a planilhas eletrônicas. A automação de cálculos é uma ferramenta fundamental no desenvolvimento de projetos de Engenharia, além de desempenhar um papel essencial no planejamento e execução do projeto desta disciplina.   
@@ -29,8 +28,11 @@ format:
 
 - "*[Microsoft 365 Excel: The Only App That Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*" - Mike Girvin
 
+------------------------------------------------------------------------
 
-## 1. Força Motriz em Veículos Ferroviários
+# Veículos Ferroviários
+
+## Força Motriz em Veículos Ferroviários
 
 
 ### Forças Atuantes
@@ -298,9 +300,9 @@ df |> ggplot(aes(x=v)) +
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
-------------------------------------------------------------------------
 
-## 2. Resistências em Veículos Ferroviários
+
+## Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser representadas por:
 
@@ -467,9 +469,8 @@ Perceba que no trecho plano, a velocidade de equilíbrio para o trem do exemplo 
 
 > [**ATIVIDADE 2**](_atividades/ATV02.pdf)
 
-------------------------------------------------------------------------
 
-## 3. Comprimento máximo do trem
+## Comprimento máximo do trem
 
 Para determinar o máximo comprimento que um trem pode trafegar, é necessário analisar o **trecho mais crítico**, ou seja, a rampa mais íngreme. Assim, dimensionando o número de locomotivas e vagões para o prior trecho, todos os demais segmentos da via serão atendidos.
 
@@ -509,7 +510,9 @@ $$
 
 ------------------------------------------------------------------------
 
-## 4. Força Motriz em Veículos Rodoviários
+# Veículos Rodoviários
+
+## Força Motriz em Veículos Rodoviários
 
 As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
 
@@ -584,10 +587,8 @@ Em que:
 
 > [**ATIVIDADE 4**](_atividades/ATV04.pdf)
 
-------------------------------------------------------------------------
 
-
-## 5. Resistências em Veículos Rodoviários
+## Resistências em Veículos Rodoviários
 
 As forças resistivas ao movimento de um veículo rodoviário é composta de três parcelas a saber:
 
