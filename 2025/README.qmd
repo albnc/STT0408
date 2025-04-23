@@ -20,7 +20,7 @@ format:
 
 
 **Material de referência**
-: Aqui estão alguns livros que recomendo para quem deseja se aprofundar em programação eficiente com planilhas.
+: Aqui estão alguns livros recomendados para quem deseja se aprofundar em programação eficiente com planilhas.
 
 - "*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003. Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*" - Haddad & Haddad
 
@@ -58,10 +58,14 @@ $$
 P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
 $$
 
-Sendo:  
+Sendo:
+
 - $W$ o Trabalho da Força \[W - *Watt*\]  
+
 - $F$ a resultante da Força \[N - *Newton*\]  
+
 - $S$ o deslocamento \[m - *metros*\]  
+
 - $v$ a velocidade do veículo \[m/s\]
 
 Para o cálculo da Força Motriz em função da Potência, utilizamos a
@@ -72,9 +76,13 @@ F_{t} = 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:  
+
 - $F$ força motriz \[kN\]  
+
 - $P$ a potência máxima do motor **\[kW\]**  
+
 - $v$ a velocidade do veículo \[km/h\]
+
 
 Para outras unidades temos:
 
@@ -83,18 +91,26 @@ F_{t} = 2,685 \cdot \frac{P}{v}
 $$
 
 Em que:  
+
 - $F$ força motriz \[kN\]  
+
 - $P$ a potência máxima do motor **\[hp\]**  
+
 - $v$ a velocidade do veículo \[km/h\]
+
 
 $$
 F_{t} = 2,649 \cdot \frac{P}{v}
 $$
 
 Tal que:  
+
 - $F$ força motriz \[kN\]  
+
 - $P$ a potência máxima do motor **\[cv\]**  
+
 - $v$ a velocidade do veículo \[km/h\]
+
 
 ### Eficiência de Transmissão
 
@@ -200,7 +216,7 @@ df |> ggplot(aes(x=v, y=Ft)) +
 
 ### Tração por aderência em locomotivas
 
-Para que as rodas da locomotiva não patine, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
+Para que as rodas da locomotiva não patinem, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
 
 Portanto a **Força Motriz Máxima** está limitada pela **aderência** da interface roda-trilho:
 
@@ -209,7 +225,9 @@ Ft_{max} \leq f \cdot T_{d}
 $$
 
 Em que:  
+
 - $T_{d}$ é o peso aderente \[kN\]  
+
 - $f$ é a aderência
 
 A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
@@ -225,6 +243,8 @@ A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
 
+: Coeficientes de aderência para condições do trilho
+
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
 
@@ -232,7 +252,7 @@ A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$
 
 **EXEMPLO: Força Tratora**
 
-Considere uma locomotiva com Peso Bruto Total de 100 toneladas e um fator de aderência $f$ de 0,20, portanto:
+Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas -- como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade -- e um fator de aderência $f$ de 0,20, portanto:
 
 $$
 Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10)
@@ -311,13 +331,18 @@ R_t = R_r + R_a + R_g + R_c
 $$
 
 Sendo,  
+
 - $R_t$ : resistência total \[kN\]  
+
 - $R_r$ : resistência ao rolamento \[kN\]  
+
 - $R_a$ : resistência aerodinâmica \[kN\]  
+
 - $R_g$ : resistência de rampa \[kN\]  
+
 - $R_c$ : resistência de curva \[kN\]
 
-Dentre todas essas resistências, as resistências **ao rolamento e aerodinâmica** sempre existe, portanto é denominado de ***Resistência Básica*** ou ***Resistência Inerente***.
+Dentre todas as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, o que denominamos de ***Resistência Básica*** ou ***Resistência Inerente***.
 
 ### Resistência ao Rolamento
 
@@ -328,17 +353,24 @@ R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 \cdot V \right) \cdot \frac{G}{10
 $$
 
 Em que,  
+
 - $R_r$ : resistência ao rolamento \[kN\]  
+
 - $x$ : número de eixos da locomotiva ou vagão  
+
 - $G$ : peso da locomotiva ou vagão \[kN\]  
+
 - $V$ : velocidade do veículo \[km/h\]  
+
 - $c_1$ : constante que incorpora o efeito da deformação da roda e do
 trilho ($\approx 0,65$)  
+
 - $c_2$ : constante que incorpora o efeito do atrito dos mancais
 ($\approx 125$)  
+
 - $c_3$ : constante que incorpora o efeito do atrito entre friso das
-rodas e trilho (passageiro e locomotiva $\approx 0,009$; vagão
-$\approx 0,013$)
+rodas e trilho (passageiro e locomotiva $\approx 0,009$; vagão $\approx 0,013$)
+
 
 ### Resistência Aerodinâmica
 
@@ -347,8 +379,11 @@ R_a = \frac{c_a \cdot A \cdot V^2}{1000}
 $$
 
 Tal que,  
+
 - $R_a$ : resistência aerodinâmica \[kN\]  
+
 - $c_a$ : coeficiente aerodinâmico [^tab.A]  
+
 - $A$ : área frontal do veículo \[m²\]
 
 | **Tipo de veículo**       | **Área frontal (m²)** | **$c_a$** |
@@ -357,6 +392,8 @@ Tal que,
 | Locomotiva de passageiros | 9 – 11                |     0,031 |
 | Vagões de carga           | 7,5 – 8,5             |     0,009 |
 | Carros de passageiros     | 10 – 11               |     0,006 |
+
+: Coeficiente aerodinâmico para veículos ferroviários
 
 [^tab.A]: Setti, J.R. (2002) *Tecnologia de Transportes*. Notas de aula, USP-EESC.
 
@@ -367,8 +404,11 @@ R_g = G \cdot i
 $$
 
 Em que,  
+
 - $R_g$ : resistência de rampa em \[kN\]  
+
 - $G$ : peso do veículo (locomotiva ou vagão) \[kN\]  
+
 - $i$ : declividade da rampa \[% – em decimal\]
 
 ### Resistência de Curva
@@ -378,15 +418,18 @@ R_c = 0,698 \cdot \frac{G}{r}
 $$
 
 Sendo,  
+
 - $R_c$ : resistência de curva \[kN\]  
+
 - $G$ : peso do veículo (locomotiva ou vagão) \[kN\]  
+
 - $r$ : raio de curva \[m\]
 
 ------------------------------------------------------------------------
 
 **EXEMPLO: Resistências**
 
-Considere uma locomotiva descrita anteriormente, área frontal de 10 m² e 6 eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem curva. Utilizando as equações e parâmetros anteriores teremos:
+Considere a locomotiva descrita anteriormente, área frontal de 10 m² e 6 eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem curva. Utilizando as equações e parâmetros anteriores teremos:
 
 ```{r, echo=FALSE}
 ## CONSTANTES
@@ -517,6 +560,7 @@ $$
 As equações de Força Motriz seguem os mesmos princípios de **Veículos Ferroviárias**. 
 
 ### Força motriz em motor à combustão
+
 O cálculo da Força Motriz nos indica as forças que o motor é capaz de gerar.
 
 $$
@@ -524,13 +568,15 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:  
+
 - $F$ força motriz \[kN\]
 
-- $\eta$ eficiência de transmissão (em torno de 0,82)
+- $\eta$ eficiência de transmissão ($\approx 0,82$)
 
 - $P$ a potência máxima do motor **\[kW\]**
 
 - $v$ a velocidade do veículo \[km/h\]
+
 
 ### Força de aderência em veículo rodoviário
 
@@ -543,7 +589,7 @@ A **Força Máxima de aderência** é o limite disponível que determinado tipo 
 
 ![cv-trucks](_img/cv-trucks.jpg)
 
-A seguir, uma tabela [^tab.A] com fatores de aderência para diferentes tipos de pavimentos.
+A seguir, a tabela [^tab.A] com fatores de aderência para diferentes tipos de pavimentos.
 
 | ***Superfície***         | ***Aderência*** |
 |:-------------------------|----------------:|
@@ -558,6 +604,8 @@ A seguir, uma tabela [^tab.A] com fatores de aderência para diferentes tipos de
 | Areia úmida              |            0,40 |
 | Neve                     |            0,20 |
 | Gelo                     |            0,10 |
+
+: Fatores de aderência para pavimentos rodoviários
 
 
 ### Velocidade em caminhões
@@ -575,7 +623,7 @@ $$
 
 Em que:
 
-  - $V$ : a velocidade do veículos [km/h]
+  - $V$ : a velocidade do veículo [km/h]
   
   - $N$ : a rotação do motor por minuto [rpm]
   
@@ -590,7 +638,7 @@ Em que:
 
 ## Resistências em Veículos Rodoviários
 
-As forças resistivas ao movimento de um veículo rodoviário é composta de três parcelas a saber:
+A força resistiva ao movimento de um veículo rodoviário é composta de três parcelas a saber:
 
 $$
 R_t = R_r + R_a + R_g
@@ -606,7 +654,7 @@ Sendo,
 
 - $R_g$ : resistência de rampa \[kN\]  
 
-Dentre as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, portanto é denominado de ***Resistência Básica*** ou ***Resistência Inerente***.
+Dentre as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, portanto é denominada de ***Resistência Básica*** ou ***Resistência Inerente***.
 
 ### Resistência ao Rolamento
 
@@ -650,6 +698,7 @@ Tal que,
 | Ônibus           | 7,0 – 9,0             | 0,035 a 0,040 |
 | Caminhões        | 6,0 – 9,0             | 0,028 a 0,040 |
 
+: Coeficientes aerodinâmicos para veículos rodoviários
 
 ### Resistência de Rampa
 
@@ -658,10 +707,13 @@ R_g = G \cdot i
 $$
 
 Em que,  
+
 - $R_g$ : resistência de rampa em \[kN\]  
+
 - $G$ : peso do veículo \[kN\]  
+
 - $i$ : declividade da rampa \[% – em decimal\]
+
 
 > [**ATIVIDADE 5**](_atividades/ATV05.pdf)
 
-------------------------------------------------------------------------
