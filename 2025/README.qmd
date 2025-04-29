@@ -13,6 +13,11 @@ format:
 
 ------------------------------------------------------------------------
 
+```{r, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
 # Revisão de Planilhas Eletrônicas
 
 **Objetivo**
@@ -132,10 +137,7 @@ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
 
-```{r, echo=FALSE, message=FALSE}
-library(ggplot2)
-library(dplyr)
-```
+
 
 ```{r, echo=FALSE}
 # Potência em kW
@@ -632,6 +634,71 @@ Em que:
   - $g_{d}$ : fator de redução do diferencial
   
   - $D$ : diâmetro do pneu
+
+
+**EXEMPLO: Força Tratora em caminhões**
+
+Considere os dados técnicos do modelo de caminhão [Accelo 1317](_refs/Accelo1317.pdf) e seu . Construa a curva de *Força Tratora vs. Velocidade* para cada marcha. 
+
+Dados Técnicos:
+
+- Tração 6x2;
+- Potência Máxima do Motor: $P_{máx} = 120~kW$
+  - Rotação do motor: $N = [1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600]~rpm$;
+  - Potência do motor: $P = [60, 76, 90, 96, 105, 112, 120, 105, 76]~kW$;
+- Velocidade Máxima: $V_{máx} = 110~km/h$;
+- Redução do diferencial: $g_d = 3,91$;
+- Reduções do câmbio (6 marchas): $g_t = [6,94; 5,7; 4,46; 3,22; 1,98; 0,74]$;
+- Diâmetro do pneu: $D = 0,88~m$
+
+
+```{r, echo=FALSE}
+## CONSTANTES----
+# Gravidade
+g = 10 #m/s²
+
+## VARIÁVEIS----
+# Motor
+rpm = seq(1000,2600, by=200)
+Pot = c(60, 76, 90, 96, 105, 112, 120, 105, 76)
+# Diferencial
+gd = 3.91
+# Câmbio
+gt = seq(from = 6.94, to = 0.74, length.out = 6)
+# Diâmetro do pneu
+D = 0.88
+
+## DATAFRAME----
+df <- expand.grid(
+  Marcha = 1:6,
+  N = rpm
+) |> arrange(Marcha) |> 
+  mutate(
+  P = rep(Pot, times = 6 )
+)
+
+
+## Plotar
+colors <- c("Ft" = "blue", "Ftmax" = "cyan", "Rt_0%" = "orange", "Rt_1%" = "red")
+df |> ggplot(aes(x=V)) +
+  geom_line(aes(y=Ft, color='Ft'), linewidth=1) +
+  geom_line(aes(y=Ftmax, color='Ftmax'), linewidth=1)+
+  geom_line(aes(y=Rt_plano, color='Rt_0%'), linewidth=1)+
+  geom_line(aes(y=Rt_aclive, color='Rt_1%'), linewidth=1)+
+  scale_x_continuous(breaks=seq(0,vmax,10)) +
+  scale_y_continuous(breaks=seq(0,round(max(df$Ft)/5,0)*5,20)) +
+  labs( title = "Força Tratora da Locomotiva vs. Resistências do Trem",
+        subtitle = paste("Exemplo com", nL, "Locomotiva(s) e", nV, "vagões"),
+        x = "Velocidade [km/h]",
+        y = "Força Tratora [kN]",
+        color="Legend" ) +
+  theme_bw() +
+  scale_color_manual(values = colors)
+  
+```
+
+
+
 
 > [**ATIVIDADE 4**](_atividades/ATV04.pdf)
 
