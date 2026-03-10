@@ -251,8 +251,7 @@ $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
-> [**ATIVIDADE 1**](_atividades/ATV01.pdf)
-
+---
 ## Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser
@@ -375,8 +374,6 @@ situações considerando a Potência máxima da locomotiva, portanto
 cruzando com a curva da Froça Tratora ($F_t$). Lembre-se que toda a área
 abaixo da curva de $F_t$ é possível de ser operada.
 
-> [**ATIVIDADE 2**](_atividades/ATV02.pdf)
-
 ## Comprimento máximo do trem
 
 Para determinar o máximo comprimento que um trem pode trafegar, é
@@ -426,7 +423,6 @@ $$
     composição em termos de: $n_{Loc}$ locomotivas transportanto
     $n_{vag}$ vagões.
 
-> [**ATIVIDADE 3**](_atividades/ATV03.pdf)
 
 ------------------------------------------------------------------------
 
@@ -519,7 +515,6 @@ Em que:
 
 - $D$ : diâmetro do pneu
 
-> [**ATIVIDADE 4**](_atividades/ATV04.pdf)
 
 ## Resistências em Veículos Rodoviários
 
@@ -605,7 +600,6 @@ Em que,
 
 - $i$ : declividade da rampa \[% – em decimal\]
 
-> [**ATIVIDADE 5**](_atividades/ATV05.pdf)
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
