@@ -21,6 +21,9 @@ Informações da Disciplina
 > - criar e usar software para resolver problemas de engenharia.
 
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
 ## Programa Resumido
 
 1. Os sistemas de transporte: componentes, organização e importância econômica
