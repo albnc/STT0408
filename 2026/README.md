@@ -30,6 +30,7 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 - Força Normal ($N$)
 
 <img src="_img/locomotive.png" style="width:50.0%" alt="Forces" />
+
 ### Equilíbrio de Forças
 
 - $F_{t} < R_{t} \Rightarrow$ desacelerando
@@ -39,6 +40,7 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 ### Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
+
 $$
 P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
 $$
@@ -50,6 +52,7 @@ Sendo:
 - $v$ a velocidade do veículo \[$m/s$\]
 
 Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte equação com as unidades métricas:
+
 $$
 F_{t} = 3,6 \cdot \frac{P}{v}
 $$
@@ -59,6 +62,7 @@ Sendo:
 - $v$ a velocidade do veículo \[$km/h$\]
 
 Para outras unidades temos:
+
 $$
 F_{t} = 2,685 \cdot \frac{P}{v}
 $$
@@ -91,6 +95,7 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v} \rightarrow 0,82 \cdot 3,6 \cdot \frac{
 $$ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
+
 ![](STT0408/2026/README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 > [!IMPORTANT]
