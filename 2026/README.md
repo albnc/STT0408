@@ -46,8 +46,8 @@ P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac
 $$
 
 Sendo:
-- $W$ o Trabalho da Força [$W$ - *Watt*]
-- $F$ a resultante da Força [$N$ - *Newton*]
+- $W$ o Trabalho da Força [ $W$ - *Watt*]
+- $F$ a resultante da Força [ $N$ - *Newton*]
 - $S$ o deslocamento \[$m$ - *metros*\]
 - $v$ a velocidade do veículo \[$m/s$\]
 
