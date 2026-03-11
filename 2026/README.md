@@ -150,9 +150,9 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 ---
 
 > [!IMPORTANT]
-> **Resumindo:** a Força Tratora útil disponível é dada por
+> **A Força Tratora útil disponível é dada por**:
 > 
-> $$ F_t^{disp} = min(Ft_{CE}; Ft_{max}; Ft_{eq})$$
+> $$ F_t^{disp} = min(Ft_{CE}; Ft_{max}; Ft)$$
 > 
 > $$ F_t^{disp} = min\bigg(Ft_{CE} ; f \cdot T_d ; \eta \cdot 3,6 \cdot \frac{P}{v}\bigg)$$
 
@@ -253,7 +253,7 @@ Sendo,
 > 
 > ![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
 > 
-> Perceba que no trecho plano ($R_{t\_0\%}$), a velocidade de equilíbrio para o trem do exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive de 1,0% ($R_{t\_1\%}$), a composição consegue manter uma velocidade de 22 km/h. Ambas as situações considerando a **potência máxima** da locomotiva, portanto cruzando com a curva da Força Tratora ($F_t$). 
+> Perceba que no trecho plano ( $R_{t\_0\%}$ ), a velocidade de equilíbrio para o trem do exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive de 1,0% ( $R_{t\_1\%}$ ), a composição consegue manter uma velocidade de 22 km/h. Ambas as situações considerando a **potência máxima** da locomotiva, portanto cruzando com a curva da Força Tratora ($F_t$). 
 > 
 > > [!IMPORTANT]
 > > Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
