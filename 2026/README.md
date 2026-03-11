@@ -22,7 +22,7 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 
 ## 1.1 Força Motriz em Veículos Ferroviários
 
-### Forças Atuantes
+### 1.1.1. Forças Atuantes
 
 - Força Motriz ou Tratora ($F_{t}$)
 - Resistências ($R_{t}$)
@@ -31,13 +31,13 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 
 <img src="_img/locomotive.png" style="width:50.0%" alt="Forces" />
 
-### Equilíbrio de Forças
+### 1.1.2. Equilíbrio de Forças
 
 - $F_{t} < R_{t} \Rightarrow$ desacelerando
 - $F_{t} > R_{t} \Rightarrow$ acelerando
 - $F_{t} = R_{t} \Rightarrow$ velocidade constante
 
-### Força Motriz em motores elétricos
+### 1.1.3. Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
@@ -82,7 +82,7 @@ Tal que:
 - $P$ a potência máxima do motor [cv]
 - $v$ a velocidade do veículo [km/h]
 
-### Eficiência de Transmissão
+### 1.1.4. Eficiência de Transmissão
 
 Em todo motor existem perdas resultante do atrito das peças, do sistema de transmissão, dos sistemas auxiliares (compressor, corrente, alternador, etc.). Portanto admitimos uma eficiência $\eta$, em locomotivas, em torno de **0,82**:
 
@@ -117,7 +117,7 @@ $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-### Tração por aderência em locomotivas
+### 1.1.5. Tração por aderência em locomotivas
 
 Para que as rodas da locomotiva não patinem, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq Ft_{max}$.
 
