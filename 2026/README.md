@@ -115,7 +115,7 @@ $$
 F_{CE} = 221.4~kN 
 $$
 
-![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-3-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 ### Tração por aderência em locomotivas
 
@@ -152,10 +152,7 @@ A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$
 
 **EXEMPLO: Força Tratora**
 
-Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100
-toneladas – como todos os eixos são tratores, o peso aderente será
-$T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um
-fator de aderência $f$ de 0,20, portanto:
+Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um fator de aderência $f$ de 0,20, portanto:
 
 $$
 Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10)
