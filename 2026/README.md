@@ -22,7 +22,7 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 
 ## 1.1 Força Motriz em Veículos Ferroviários
 
-### ==Forças Atuantes==
+### Forças Atuantes
 
 - Força Motriz ou Tratora ($F_{t}$)
 - Resistências ($R_{t}$)
@@ -30,7 +30,6 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 - Força Normal ($N$)
 
 <img src="_img/locomotive.png" style="width:50.0%" alt="Forces" />
-
 ### Equilíbrio de Forças
 
 - $F_{t} < R_{t} \Rightarrow$ desacelerando
@@ -40,47 +39,42 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 ### Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
-
 $$
 P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac{dS}{dt} \Rightarrow F \cdot v
 $$
 
 Sendo:
-
-- $W$ o Trabalho da Força \[W - *Watt*\]
-- $F$ a resultante da Força \[N - *Newton*\]
-- $S$ o deslocamento \[m - *metros*\]
-- $v$ a velocidade do veículo \[m/s\]
+- $W$ o Trabalho da Força \[$W$ - *Watt*\]
+- $F$ a resultante da Força \[$N$ - *Newton*\]
+- $S$ o deslocamento \[$m$ - *metros*\]
+- $v$ a velocidade do veículo \[$m/s$\]
 
 Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte equação com as unidades métricas:
-
 $$
 F_{t} = 3,6 \cdot \frac{P}{v}
 $$
 Sendo:
-
-- $F$ força motriz \[kN\]
-- $P$ a potência máxima do motor **\[kW\]**
-- $v$ a velocidade do veículo \[km/h\]
+- $F$ força motriz \[$kN$\]
+- $P$ a potência máxima do motor **\[$kW$\]**
+- $v$ a velocidade do veículo \[$km/h$\]
 
 Para outras unidades temos:
-
 $$
 F_{t} = 2,685 \cdot \frac{P}{v}
 $$
 Em que:
-- $F$ força motriz \[kN\]
-- $P$ a potência máxima do motor **\[hp\]**
-- $v$ a velocidade do veículo \[km/h\]
+- $F$ força motriz \[$kN$\]
+- $P$ a potência máxima do motor **\[$hp$\]**
+- $v$ a velocidade do veículo \[$km/h$\]
 
 $$
 F_{t} = 2,649 \cdot \frac{P}{v}
 $$
 
 Tal que:
-- $F$ força motriz \[kN\]
-- $P$ a potência máxima do motor **\[cv\]**
-- $v$ a velocidade do veículo \[km/h\]
+- $F$ força motriz \[$kN$\]
+- $P$ a potência máxima do motor **\[$cv$\]**
+- $v$ a velocidade do veículo \[$km/h$\]
 
 ### Eficiência de Transmissão
 
@@ -90,51 +84,50 @@ $$
 F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
-Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência** constante de, por exemplo, $1.500$ kW será de:
+Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência constante** de, por exemplo, $1.500~kW$ será de:
 $$
 F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{v_i}
 $$ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
-
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 > [!IMPORTANT]
-> É importante observar que este gráfico apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
+> Observe que o gráfico acima apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
 > 
-> 1.  da corrente elétrica (máxima força tratora disponível) no eixo Y,
-> 2.  da voltagem ou rotação do motor (máxima velocidade disponível) no eixo X.
-
+> 1.  da **corrente elétrica** (máxima força tratora disponível) no eixo Y,
+> 2.  da **voltagem ou rotação do motor** (máxima velocidade disponível) no eixo X.
+ 
 Dessa forma, a função anterior fica limita a esses dois limites. Como exemplo, considere a velocidade máxima de 90 km/h e a força tratora máxima pela corrente elétrica ($F_{CE}$), limitada pela **Velocidade Mínima de Operação Constante** (VMOC) de 20 km/h.
+ 
 $$
 F_{CE} = \eta \cdot 3,6 \cdot \frac{P}{VMOC} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{20}
-$$ $$
-F_{CE} = 221.4~kN
+$$
+$$
+F_{CE} = 221.4~kN 
 $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 ### Tração por aderência em locomotivas
 
-Para que as rodas da locomotiva não patinem, a **Força Tratora** que o
-motor despeja nas rodas deve ser menor que a **Força de aderência**
-entre o trilho e as rodas: $F_{t} \leq F_{a}$.
+Para que as rodas da locomotiva não patinem, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
 
-Portanto a **Força Motriz Máxima** está limitada pela **aderência** da
-interface roda-trilho:
+Portanto a **Força Motriz Máxima** está limitada pela **aderência** da interface roda-trilho:
 
 $$
-Ft_{max} \leq f \cdot T_{d}
+F_t^{max} \leq f \cdot T_{d}
 $$
 
 Em que:
+- $F_t^{max}$ é a força motriz máxima ou de aderência \[$kN$\]
+- $T_{d}$ é o peso aderente \[$kN$\]
+- $f$ é o fator de aderência entre roda e trilho (adimensional)
 
-- $T_{d}$ é o peso aderente \[kN\]
+A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
 
-- $f$ é a aderência
-
-A tabela abaixo[^1] descreve valores típicos do *coeficiente de
-aderência* $f$ para várias condições do trilho.
+:::{table} *Coeficientes de aderência para condições do trilho*
+:label: tbl-aderencia-ferro
 
 | ***Estado do trilho*** | ***Aderência*** |
 |:-----------------------|----------------:|
@@ -146,8 +139,7 @@ aderência* $f$ para várias condições do trilho.
 | Úmido de orvalho       |           0,125 |
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
-
-*Coeficientes de aderência para condições do trilho*
+:::
 
 ------------------------------------------------------------------------
 
