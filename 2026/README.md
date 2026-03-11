@@ -254,9 +254,10 @@ Sendo,
 > ![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
 > 
 > Perceba que no trecho plano (0%), a velocidade de equilíbrio para o trem do exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive de 1,0%, a composição consegue manter uma velocidade de 22 km/h. Ambas as situações considerando a **potência máxima** da locomotiva, portanto cruzando com a curva da Força Tratora ($F_t$). 
-> 
-> > [!IMPORTANT]
-> > Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
+
+
+> [!IMPORTANT]
+> Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
 
 ---
 ## 1.3. Comprimento máximo do trem
