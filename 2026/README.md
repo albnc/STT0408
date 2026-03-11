@@ -47,7 +47,7 @@ $$
 
 Sendo:
 - $W$ o Trabalho da Força \[$W$ - *Watt*\]
-- - $F$ a resultante da Força \[$N$ - *Newton*\]
+- $F$ a resultante da Força \[$N$ - *Newton*\]
 - $S$ o deslocamento \[$m$ - *metros*\]
 - $v$ a velocidade do veículo \[$m/s$\]
 
@@ -98,7 +98,7 @@ $$ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
 
-![](STT0408/2026/README_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 > [!IMPORTANT]
 > Observe que o gráfico acima apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
