@@ -46,10 +46,10 @@ P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac
 $$
 
 Sendo:
-- $W$ o Trabalho da Força [ $W$ - *Watt*]
-- $F$ a resultante da Força [ $N$ - *Newton*]
-- $S$ o deslocamento \[$m$ - *metros*\]
-- $v$ a velocidade do veículo \[$m/s$\]
+- $W$ o Trabalho da Força [ $W$ - *Watt* ]
+- $F$ a resultante da Força [ $N$ - *Newton* ]
+- $S$ o deslocamento [ $m$ - *metros* ]
+- $v$ a velocidade do veículo [ $m/s$ ]
 
 Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte equação com as unidades métricas:
 
@@ -58,9 +58,9 @@ F_{t} = 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:
-- $F$ força motriz \[$kN$\]
-- $P$ a potência máxima do motor **\[$kW$\]**
-- $v$ a velocidade do veículo \[$km/h$\]
+- $F$ força motriz [ $kN$ ]
+- $P$ a potência máxima do motor [ $kW$ ]
+- $v$ a velocidade do veículo [ $km/h$ ]
 
 Para outras unidades temos:
 
@@ -69,18 +69,18 @@ F_{t} = 2,685 \cdot \frac{P}{v}
 $$
 
 Em que:
-- $F$ força motriz \[$kN$\]
-- $P$ a potência máxima do motor **\[$hp$\]**
-- $v$ a velocidade do veículo \[$km/h$\]
+- $F$ força motriz [ $kN$ ]
+- $P$ a potência máxima do motor [ $hp$ ]
+- $v$ a velocidade do veículo [ $km/h$ ]
 
 $$
 F_{t} = 2,649 \cdot \frac{P}{v}
 $$
 
 Tal que:
-- $F$ força motriz \[$kN$\]
-- $P$ a potência máxima do motor **\[$cv$\]**
-- $v$ a velocidade do veículo \[$km/h$\]
+- $F$ força motriz [ $kN$ ]
+- $P$ a potência máxima do motor [ $cv$ ]
+- $v$ a velocidade do veículo [ $km/h$ ]
 
 ### Eficiência de Transmissão
 
@@ -100,7 +100,7 @@ $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
-> [!IMPORTANT]
+> [!warning]
 > Observe que o gráfico acima apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
 > 
 > 1.  da **corrente elétrica** (máxima força tratora disponível) no eixo Y,
@@ -112,27 +112,27 @@ $$
 F_{CE} = \eta \cdot 3,6 \cdot \frac{P}{VMOC} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{20}
 $$
 $$
-F_{CE} = 221.4~kN 
+F_{CE} = 221,4~kN 
 $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 ### Tração por aderência em locomotivas
 
-Para que as rodas da locomotiva não patinem, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq F_{a}$.
+Para que as rodas da locomotiva não patinem, a **Força Tratora** que o motor despeja nas rodas deve ser menor que a **Força de aderência** entre o trilho e as rodas: $F_{t} \leq Ft_{max}$.
 
 Portanto a **Força Motriz Máxima** está limitada pela **aderência** da interface roda-trilho:
 
 $$
-F_t^{max} \leq f \cdot T_{d}
+Ft_{max} \leq f \cdot T_{d}
 $$
 
 Em que:
-- $F_t^{max}$ é a força motriz máxima ou de aderência \[$kN$\]
-- $T_{d}$ é o peso aderente \[$kN$\]
+- $Ft_{max}$ é a força motriz máxima ou de aderência [ $kN$ ]
+- $T_{d}$ é o peso aderente [ $kN$ ]
 - $f$ é o fator de aderência entre roda e trilho (adimensional)
 
-A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
+A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
 
 *Tabela 1 - Coeficientes de aderência para condições do trilho*
 
@@ -147,22 +147,14 @@ A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
 
-
 ------------------------------------------------------------------------
 
-**EXEMPLO: Força Tratora**
-
-Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um fator de aderência $f$ de 0,20, portanto:
-
-$$
-Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10)
-$$
-
-$$
-Ft_{max} = 200~kN
-$$
-
-![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-4-1.png)
+> [!note]
+> **EXEMPLO: Força Tratora**
+> Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um fator de aderência $f$ de 0,20, portanto:
+> $$ Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10) $$
+> $$ Ft_{max} = 200~kN $$
+> ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ---
 ## Resistências em Veículos Ferroviários
