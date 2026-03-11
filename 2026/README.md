@@ -1,7 +1,6 @@
 > **STT0408 - Fundamentos de Engenharia de Transportes (2026)**
 > Prof. André Luiz Cunha, Prof. José Reynaldo Setti
 
-------------------------------------------------------------------------
 # 0. Revisão de Planilhas Eletrônicas
 
 **Objetivo**  
@@ -15,8 +14,6 @@ Aula introdutória e de nivelamento em programação aplicada a planilhas eletr�
 >- “*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003 Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*” -  Haddad & Haddad
 >- “*[Ctrl+shift+enter: A Book about Building Efficient Formulas](https://www.amazon.com/Shift-Enter-Mastering-Excel-Formulas/dp/1615470077)*” - Mike Girvin
 >- “*[Microsoft 365 Excel: The Only App That Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*” - Mike Girvin
-
-------------------------------------------------------------------------
 
 # 1. Veículos Ferroviários
 
@@ -166,8 +163,6 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 > 
 > ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
----
-
 ## 1.2. Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser representadas por:
@@ -259,7 +254,6 @@ Sendo,
 > [!IMPORTANT]
 > Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
 
----
 ## 1.3. Comprimento máximo do trem
 
 Para determinar o máximo comprimento que um trem pode trafegar, é necessário analisar o **trecho mais crítico**, ou seja, a rampa mais íngreme. Assim, dimensionando o número de locomotivas e vagões para o prior trecho, todos os demais segmentos da via serão atendidos.
