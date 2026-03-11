@@ -151,9 +151,12 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 
 > [!note]
 > **EXEMPLO: Força Tratora**
+> 
 > Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um fator de aderência $f$ de 0,20, portanto:
+> 
 > $$ Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10) $$
 > $$ Ft_{max} = 200~kN $$
+> 
 > ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ---
