@@ -149,7 +149,7 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 
 ---
 
-> [! IMPORTANT]
+> [!IMPORTANT]
 > **Resumindo:** a Força Tratora útil disponível é dada por
 > 
 > $$ F_t^{disp} = min(Ft_{CE}, Ft_{max}, Ft_{eq})$$
