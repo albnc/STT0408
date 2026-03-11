@@ -1,4 +1,4 @@
-**STT0408 - Fundamentos de Engenharia de Transportes (2026)**
+**STT0408 - Fundamentos de Engenharia de Transportes (2026)**    
 *Prof. André Luiz Cunha & Prof. José Reynaldo Setti*
 
 ---
