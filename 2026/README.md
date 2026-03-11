@@ -160,8 +160,8 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 > ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ---
-<!--
-## Resistências em Veículos Ferroviários
+
+## 2. Resistências em Veículos Ferroviários
 
 As forças resistivas ao movimento de um veículo ferroviário podem ser
 representadas por:
@@ -508,7 +508,7 @@ Em que,
 - $G$ : peso do veículo \[kN\]
 
 - $i$ : declividade da rampa \[% – em decimal\]
--->
+
 
 [^1]: Hay, W. (1982) *Railroad Engineering*. Wiley & Sons, New York, 2ª
     edição.
