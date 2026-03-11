@@ -1,56 +1,8 @@
-# STT0408 - Fundamentos de Engenharia de Transportes (2025)
+# STT0408 - Fundamentos de Engenharia de Transportes (2026)
 Prof. André Luiz Cunha, Prof. José Reynaldo Setti
 
-- [<span class="toc-section-number">1</span> Revisão de Planilhas
-  Eletrônicas](#revisão-de-planilhas-eletrônicas)
-- [<span class="toc-section-number">2</span> Veículos
-  Ferroviários](#veículos-ferroviários)
-  - [<span class="toc-section-number">2.1</span> Força Motriz em
-    Veículos Ferroviários](#força-motriz-em-veículos-ferroviários)
-    - [<span class="toc-section-number">2.1.1</span> Forças
-      Atuantes](#forças-atuantes)
-    - [<span class="toc-section-number">2.1.2</span> Equilíbrio de
-      Forças](#equilíbrio-de-forças)
-    - [<span class="toc-section-number">2.1.3</span> Força Motriz em
-      motores elétricos](#força-motriz-em-motores-elétricos)
-    - [<span class="toc-section-number">2.1.4</span> Eficiência de
-      Transmissão](#eficiência-de-transmissão)
-    - [<span class="toc-section-number">2.1.5</span> Tração por
-      aderência em locomotivas](#tração-por-aderência-em-locomotivas)
-  - [<span class="toc-section-number">2.2</span> Resistências em
-    Veículos Ferroviários](#resistências-em-veículos-ferroviários)
-    - [<span class="toc-section-number">2.2.1</span> Resistência ao
-      Rolamento](#resistência-ao-rolamento)
-    - [<span class="toc-section-number">2.2.2</span> Resistência
-      Aerodinâmica](#resistência-aerodinâmica)
-    - [<span class="toc-section-number">2.2.3</span> Resistência de
-      Rampa](#resistência-de-rampa)
-    - [<span class="toc-section-number">2.2.4</span> Resistência de
-      Curva](#resistência-de-curva)
-  - [<span class="toc-section-number">2.3</span> Comprimento máximo do
-    trem](#comprimento-máximo-do-trem)
-- [<span class="toc-section-number">3</span> Veículos
-  Rodoviários](#veículos-rodoviários)
-  - [<span class="toc-section-number">3.1</span> Força Motriz em
-    Veículos Rodoviários](#força-motriz-em-veículos-rodoviários)
-    - [<span class="toc-section-number">3.1.1</span> Força motriz em
-      motor à combustão](#força-motriz-em-motor-à-combustão)
-    - [<span class="toc-section-number">3.1.2</span> Força de aderência
-      em veículo rodoviário](#força-de-aderência-em-veículo-rodoviário)
-    - [<span class="toc-section-number">3.1.3</span> Velocidade em
-      caminhões](#velocidade-em-caminhões)
-  - [<span class="toc-section-number">3.2</span> Resistências em
-    Veículos Rodoviários](#resistências-em-veículos-rodoviários)
-    - [<span class="toc-section-number">3.2.1</span> Resistência ao
-      Rolamento](#resistência-ao-rolamento-1)
-    - [<span class="toc-section-number">3.2.2</span> Resistência
-      Aerodinâmica](#resistência-aerodinâmica-1)
-    - [<span class="toc-section-number">3.2.3</span> Resistência de
-      Rampa](#resistência-de-rampa-1)
-
 ------------------------------------------------------------------------
-
-# Revisão de Planilhas Eletrônicas
+## 0. Revisão de Planilhas Eletrônicas
 
 **Objetivo**  
 Aula introdutória e de nivelamento em programação aplicada a planilhas
@@ -58,9 +10,10 @@ eletrônicas. A automação de cálculos é uma ferramenta fundamental no
 desenvolvimento de projetos de Engenharia, além de desempenhar um papel
 essencial no planejamento e execução do projeto desta disciplina.
 
-**Material de referência**  
-Aqui estão alguns livros recomendados para quem deseja se aprofundar em
-programação eficiente com planilhas.
+> [!NOTE]
+> **Material de referência**  
+> Aqui estão alguns livros recomendados para quem deseja se aprofundar em
+> programação eficiente com planilhas.
 
 - “*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003.
   Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*” -
