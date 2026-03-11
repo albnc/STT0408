@@ -174,7 +174,7 @@ $$ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
 
-![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 É importante observar que este gráfico apresenta valores tendendo ao
 infinito nas extremidades, e sabemos que os motores tem limitações, a
@@ -195,7 +195,7 @@ $$ $$
 F_{CE} = 221.4~kN
 $$
 
-![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
+![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 ### Tração por aderência em locomotivas
 
@@ -249,7 +249,7 @@ $$
 Ft_{max} = 200~kN
 $$
 
-![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
+![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 > [**ATIVIDADE 1**](_atividades/ATV01.pdf)
 
@@ -366,7 +366,7 @@ eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8
 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem
 curva. Utilizando as equações e parâmetros anteriores teremos:
 
-![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
+![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-5-1.png)
 
 Perceba que no trecho plano, a velocidade de equilíbrio para o trem do
 exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive
