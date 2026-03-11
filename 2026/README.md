@@ -147,7 +147,14 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
 
-------------------------------------------------------------------------
+---
+
+> [! IMPORTANT]
+> **Resumindo:** a Força Tratora útil disponível é dada por
+> 
+> $$ F_t^{disp} = min(Ft_{CE}, Ft_{max}, Ft_{eq})$$
+> 
+> $$ F_t^{disp} = min\bigg(Ft_{CE} , f \cdot T_d , \eta \cdot 3,6 \cdot \frac{P}{v}\bigg)$$
 
 > [!note]
 > **EXEMPLO: Força Tratora**
@@ -161,32 +168,25 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 
 ---
 
-## 2. Resistências em Veículos Ferroviários
+## 1.2. Resistências em Veículos Ferroviários
 
-As forças resistivas ao movimento de um veículo ferroviário podem ser
-representadas por:
+As forças resistivas ao movimento de um veículo ferroviário podem ser representadas por:
 
 $$
 R_t = R_r + R_a + R_g + R_c
 $$
 
 Sendo,
+- $R_t$ : resistência total [kN]
+- $R_r$ : resistência ao rolamento [kN]
+- $R_a$ : resistência aerodinâmica [kN]
+- $R_g$ : resistência de rampa [kN]
+- $R_c$ : resistência de curva [kN]
 
-- $R_t$ : resistência total \[kN\]
+> [!IMPORTANT]
+> Dentre todas as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, o que denominamos de ***Resistência Básica*** ou ***Resistência Inerente***.
 
-- $R_r$ : resistência ao rolamento \[kN\]
-
-- $R_a$ : resistência aerodinâmica \[kN\]
-
-- $R_g$ : resistência de rampa \[kN\]
-
-- $R_c$ : resistência de curva \[kN\]
-
-Dentre todas as parcelas, as resistências **ao rolamento e
-aerodinâmica** sempre existirão, o que denominamos de ***Resistência
-Básica*** ou ***Resistência Inerente***.
-
-### Resistência ao Rolamento
+### 1.2.1. Resistência ao Rolamento
 
 Segundo o modelo proposto por Davis (1910):
 
@@ -195,38 +195,26 @@ R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 \cdot V \right) \cdot \frac{G}{10
 $$
 
 Em que,
-
-- $R_r$ : resistência ao rolamento \[kN\]
-
+- $R_r$ : resistência ao rolamento [kN]
 - $x$ : número de eixos da locomotiva ou vagão
+- $G$ : peso da locomotiva ou vagão [kN]
+- $V$ : velocidade do veículo [km/h]
+- $c_1$ : constante que incorpora o efeito da deformação da roda e do trilho ($\approx 0,65$)
+- $c_2$ : constante que incorpora o efeito do atrito dos mancais ($\approx 125$)
+- $c_3$ : constante que incorpora o efeito do atrito entre friso das rodas e trilho (passageiro e locomotiva $\approx 0,009$; vagão $\approx 0,013$)
 
-- $G$ : peso da locomotiva ou vagão \[kN\]
-
-- $V$ : velocidade do veículo \[km/h\]
-
-- $c_1$ : constante que incorpora o efeito da deformação da roda e do
-  trilho ($\approx 0,65$)
-
-- $c_2$ : constante que incorpora o efeito do atrito dos mancais
-  ($\approx 125$)
-
-- $c_3$ : constante que incorpora o efeito do atrito entre friso das
-  rodas e trilho (passageiro e locomotiva $\approx 0,009$; vagão
-  $\approx 0,013$)
-
-### Resistência Aerodinâmica
+### 1.2.2. Resistência Aerodinâmica
 
 $$
 R_a = \frac{c_a \cdot A \cdot V^2}{1000}
 $$
 
 Tal que,
-
-- $R_a$ : resistência aerodinâmica \[kN\]
-
+- $R_a$ : resistência aerodinâmica [kN]
 - $c_a$ : coeficiente aerodinâmico [^2]
+- $A$ : área frontal do veículo [m²]
 
-- $A$ : área frontal do veículo \[m²\]
+*Tabela 2 - Coeficientes aerodinâmico para veículos ferroviários*
 
 | **Tipo de veículo**       | **Área frontal (m²)** | **$c_a$** |
 |:--------------------------|:----------------------|----------:|
@@ -235,71 +223,51 @@ Tal que,
 | Vagões de carga           | 7,5 – 8,5             |     0,009 |
 | Carros de passageiros     | 10 – 11               |     0,006 |
 
-*Coeficientes aerodinâmico para veículos ferroviários*
 
-### Resistência de Rampa
+### 1.2.3. Resistência de Rampa
 
 $$
 R_g = G \cdot i
 $$
 
 Em que,
-
-- $R_g$ : resistência de rampa em \[kN\]
-
-- $G$ : peso do veículo (locomotiva ou vagão) \[kN\]
-
+- $R_g$ : resistência de rampa em [kN]
+- $G$ : peso do veículo (locomotiva ou vagão) [kN]
 - $i$ : declividade da rampa \[% – em decimal\]
 
-### Resistência de Curva
+### 1.2.4. Resistência de Curva
 
 $$
 R_c = 0,698 \cdot \frac{G}{r}
 $$
 
 Sendo,
+- $R_c$ : resistência de curva [kN]
+- $G$ : peso do veículo (locomotiva ou vagão) [kN]
+- $r$ : raio de curva [m]
 
-- $R_c$ : resistência de curva \[kN\]
+> [!NOTE]
+> **EXEMPLO: Resistências**
+> 
+> Considere a locomotiva descrita anteriormente, área frontal de 10 m² e 6 eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8 m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem curva. Utilizando as equações e parâmetros anteriores teremos:
+> 
+> ![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
+> 
+> Perceba que no trecho plano ($R_{t\_0\%}$), a velocidade de equilíbrio para o trem do exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive de 1,0% ($R_{t\_1\%}$), a composição consegue manter uma velocidade de 22 km/h. Ambas as situações considerando a **potência máxima** da locomotiva, portanto cruzando com a curva da Força Tratora ($F_t$). 
+> 
+> > [!IMPORTANT]
+> > Lembre-se que toda a área abaixo da curva de $F_t$ é possível de ser operada.
 
-- $G$ : peso do veículo (locomotiva ou vagão) \[kN\]
+---
+## 1.3. Comprimento máximo do trem
 
-- $r$ : raio de curva \[m\]
-
-------------------------------------------------------------------------
-
-**EXEMPLO: Resistências**
-
-Considere a locomotiva descrita anteriormente, área frontal de 10 m² e 6
-eixos, rebocando 10 vagões com massa de 80 toneladas, área frontal de 8
-m² e 4 eixos cada. Considere o trecho plano e um aclive de 1,0%, sem
-curva. Utilizando as equações e parâmetros anteriores teremos:
-
-![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-5-1.png)
-
-Perceba que no trecho plano, a velocidade de equilíbrio para o trem do
-exemplo (1 locomotiva + 10 vagões) é em torno de 44 km/h. Já no aclive
-de 1,0%, a composição tem velocidade de equilíbrio de 22 km/h. Ambas as
-situações considerando a Potência máxima da locomotiva, portanto
-cruzando com a curva da Froça Tratora ($F_t$). Lembre-se que toda a área
-abaixo da curva de $F_t$ é possível de ser operada.
-
-## Comprimento máximo do trem
-
-Para determinar o máximo comprimento que um trem pode trafegar, é
-necessário analisar o **trecho mais crítico**, ou seja, a rampa mais
-íngreme. Assim, dimensionando o número de locomotivas e vagões para o
-prior trecho, todos os demais segmentos da via serão atendidos.
+Para determinar o máximo comprimento que um trem pode trafegar, é necessário analisar o **trecho mais crítico**, ou seja, a rampa mais íngreme. Assim, dimensionando o número de locomotivas e vagões para o prior trecho, todos os demais segmentos da via serão atendidos.
 
 Portanto o dimensionamento segue o seguinte procedimento:
 
 1.  Determine o **trecho crítico**, aclive mais íngreme;
-
-2.  Para este trecho, determine a velocidade de operação ($V_{op}$) a
-    ser adotada, lembrando que não se pode operar a locomotiva abaixo da
-    **VMOC** – *Velocidade Mínima de Operação Constante*;
-
-3.  Para a $V_{op}$, determine a relação do ***número de vagões que uma
-    locomotiva consegue rebocar***:
+2.  Para este trecho, determine a velocidade de operação ($V_{op}$) a ser adotada, lembrando que não se pode operar a locomotiva abaixo da **VMOC** – *Velocidade Mínima de Operação Constante*;
+3.  Para a $V_{op}$, determine a relação do ***número de vagões que uma locomotiva consegue rebocar***:
 
 $$
 F_t - R_t = m \cdot a \rightarrow F_t = R_t
@@ -313,31 +281,24 @@ $$
 n^{Vag} = \frac{F_t(V_{op}) - R_t^{Loc}(V_{op})}{R_t^{Vag}(V_{op})}
 $$
 
-Esta última equação mostra que a **Força Disponível para tracionar os
-vagões** nada mais é do que a força resultante da diferença entre a
-Força Máxima do motor na Velocidade Operacional pela Resistência da
-Locomotiva.
+> [!IMPORTANT]
+> Esta última equação mostra que a **Força Disponível para tracionar os vagões** nada mais é do que a força resultante da diferença entre a Força Máxima do motor na Velocidade Operacional pela Resistência da Locomotiva.
 
 4.  Guarde esta relação: 1 Locomotiva $\rightarrow n^{Vag}$.
-
-5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de
-    1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o
-    engate é capaz de suportar:
+5.  A partir da **Força Máxima do Engate** ($F_{eng}$), em torno de 1.200 a 1.500 kN, determine qual a quantidade máxima de vagões que o engate é capaz de suportar:
 
 $$ 
 n_{max.Vag} = \frac{F_{eng}}{R_{t}^{Vag}(V_{op})} 
 $$
 
-6.  A patir dos valores dos itens (4) e (5), determine o tamanho da
-    composição em termos de: $n_{Loc}$ locomotivas transportanto
-    $n_{vag}$ vagões.
+6.  A patir dos valores dos itens (4) e (5), determine o tamanho da composição em termos de: $n_{Loc}$ locomotivas transportanto $n_{vag}$ vagões.
 
 
 ------------------------------------------------------------------------
 
-# Veículos Rodoviários
+# 3. Veículos Rodoviários
 
-## Força Motriz em Veículos Rodoviários
+## 3.1 Força Motriz em Veículos Rodoviários
 
 As equações de Força Motriz seguem os mesmos princípios de **Veículos
 Ferroviárias**.
@@ -425,7 +386,7 @@ Em que:
 - $D$ : diâmetro do pneu
 
 
-## Resistências em Veículos Rodoviários
+## 3.2. Resistências em Veículos Rodoviários
 
 A força resistiva ao movimento de um veículo rodoviário é composta de
 três parcelas a saber:
