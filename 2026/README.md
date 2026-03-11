@@ -56,6 +56,7 @@ Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte
 $$
 F_{t} = 3,6 \cdot \frac{P}{v}
 $$
+
 Sendo:
 - $F$ força motriz \[$kN$\]
 - $P$ a potência máxima do motor **\[$kW$\]**
@@ -66,6 +67,7 @@ Para outras unidades temos:
 $$
 F_{t} = 2,685 \cdot \frac{P}{v}
 $$
+
 Em que:
 - $F$ força motriz \[$kN$\]
 - $P$ a potência máxima do motor **\[$hp$\]**
