@@ -91,7 +91,7 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v} \rightarrow 0,82 \cdot 3,6 \cdot \frac{
 $$ $$
 F_{t} = \frac{4428}{v_i}~[kN], \forall v_i \in [0,90]~km/h
 $$
-![](STT0408/2025/README_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
 
 > [!IMPORTANT]
 > Observe que o gráfico acima apresenta valores tendendo ao infinito nas extremidades, e sabemos que os motores tem limitações, a saber:
