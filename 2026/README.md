@@ -85,6 +85,7 @@ F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
 $$
 
 Dessa forma, o gráfico da $F_{t} = f(V)$, para uma **Potência constante** de, por exemplo, $1.500~kW$ será de:
+
 $$
 F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v} \rightarrow 0,82 \cdot 3,6 \cdot \frac{1500}{v_i}
 $$ $$
@@ -126,8 +127,7 @@ Em que:
 
 A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
 
-:::{table} *Coeficientes de aderência para condições do trilho*
-:label: tbl-aderencia-ferro
+*Tabela 1 - Coeficientes de aderência para condições do trilho*
 
 | ***Estado do trilho*** | ***Aderência*** |
 |:-----------------------|----------------:|
@@ -139,7 +139,7 @@ A tabela abaixo[^1] descreve valores típicos do *coeficiente de aderência* $f$
 | Úmido de orvalho       |           0,125 |
 | Úmido e sujo           |            0,11 |
 | Sujo de óleo           |            0,10 |
-:::
+
 
 ------------------------------------------------------------------------
 
