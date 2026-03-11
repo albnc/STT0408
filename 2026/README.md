@@ -1,39 +1,28 @@
-# STT0408 - Fundamentos de Engenharia de Transportes (2026)
-Prof. André Luiz Cunha, Prof. José Reynaldo Setti
+> **STT0408 - Fundamentos de Engenharia de Transportes (2026)**
+> Prof. André Luiz Cunha, Prof. José Reynaldo Setti
 
 ------------------------------------------------------------------------
 ## 0. Revisão de Planilhas Eletrônicas
 
 **Objetivo**  
-Aula introdutória e de nivelamento em programação aplicada a planilhas
-eletrônicas. A automação de cálculos é uma ferramenta fundamental no
-desenvolvimento de projetos de Engenharia, além de desempenhar um papel
-essencial no planejamento e execução do projeto desta disciplina.
+Aula introdutória e de nivelamento em programação aplicada a planilhas eletrônicas. A automação de cálculos é uma ferramenta fundamental no desenvolvimento de projetos de Engenharia, além de desempenhar um papel essencial no planejamento e execução do projeto desta disciplina.
 
 > [!NOTE]
 > **Material de referência**  
 > Aqui estão alguns livros recomendados para quem deseja se aprofundar em
 > programação eficiente com planilhas.
-
-- “*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003.
-  Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*” -
-  Haddad & Haddad
-
-- “*[Ctrl+shift+enter: A Book about Building Efficient
-  Formulas](https://www.amazon.com/Shift-Enter-Mastering-Excel-Formulas/dp/1615470077)*” -
-  Mike Girvin
-
-- “*[Microsoft 365 Excel: The Only App That
-  Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*” -
-  Mike Girvin
+>
+>- “*[Crie Planilhas Inteligentes com o Microsoft Office Excel 2003 Avançado](https://www.amazon.com.br/Planilhas-Inteligentes-Microsoft-Office-Avan%C3%A7ado/dp/8571949921)*” -  Haddad & Haddad
+>- “*[Ctrl+shift+enter: A Book about Building Efficient Formulas](https://www.amazon.com/Shift-Enter-Mastering-Excel-Formulas/dp/1615470077)*” - Mike Girvin
+>- “*[Microsoft 365 Excel: The Only App That Matters](https://www.amazon.com/Microsoft-365-Excel-Calculations-Analytics/dp/1615470700)*” - Mike Girvin
 
 ------------------------------------------------------------------------
 
-# Veículos Ferroviários
+## 1. Veículos Ferroviários
 
-## Força Motriz em Veículos Ferroviários
+### 1.1 Força Motriz em Veículos Ferroviários
 
-### Forças Atuantes
+#### Forças Atuantes
 
 - Força Motriz ou Tratora ($F_{t}$)
 - Resistências ($R_{t}$)
@@ -42,13 +31,13 @@ essencial no planejamento e execução do projeto desta disciplina.
 
 <img src="_img/locomotive.png" style="width:50.0%" alt="Forces" />
 
-### Equilíbrio de Forças
+#### Equilíbrio de Forças
 
 - $F_{t} < R_{t} \Rightarrow$ desacelerando
 - $F_{t} > R_{t} \Rightarrow$ acelerando
 - $F_{t} = R_{t} \Rightarrow$ velocidade constante
 
-### Força Motriz em motores elétricos
+#### Força Motriz em motores elétricos
 
 A *Potência* é derivada do *Trabalho de uma Força*, portanto:
 
@@ -107,7 +96,7 @@ Tal que:
 
 - $v$ a velocidade do veículo \[km/h\]
 
-### Eficiência de Transmissão
+#### Eficiência de Transmissão
 
 Em todo motor existem perdas resultante do atrito das peças, do sistema
 de transmissão, dos sistemas auxiliares (compressor, corrente,
@@ -150,7 +139,7 @@ $$
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-### Tração por aderência em locomotivas
+#### Tração por aderência em locomotivas
 
 Para que as rodas da locomotiva não patinem, a **Força Tratora** que o
 motor despeja nas rodas deve ser menor que a **Força de aderência**
