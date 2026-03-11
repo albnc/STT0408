@@ -46,10 +46,10 @@ P = \frac{dW}{dt} \Rightarrow \frac{d(F \cdot S )}{dt} \Rightarrow F \cdot \frac
 $$
 
 Sendo:
-- $W$ o Trabalho da Força [ $W$ - *Watt* ]
-- $F$ a resultante da Força [ $N$ - *Newton* ]
-- $S$ o deslocamento [ $m$ - *metros* ]
-- $v$ a velocidade do veículo [ $m/s$ ]
+- $W$ o Trabalho da Força [W - *Watt*]
+- $F$ a resultante da Força [N - *Newton*]
+- $S$ o deslocamento [m - *metros*]
+- $v$ a velocidade do veículo [m/s]
 
 Para o cálculo da Força Motriz em função da Potência, utilizamos a seguinte equação com as unidades métricas:
 
@@ -58,9 +58,9 @@ F_{t} = 3,6 \cdot \frac{P}{v}
 $$
 
 Sendo:
-- $F$ força motriz [ $kN$ ]
-- $P$ a potência máxima do motor [ $kW$ ]
-- $v$ a velocidade do veículo [ $km/h$ ]
+- $F$ força motriz [kN]
+- $P$ a potência máxima do motor [kW]
+- $v$ a velocidade do veículo [km/h]
 
 Para outras unidades temos:
 
@@ -69,18 +69,18 @@ F_{t} = 2,685 \cdot \frac{P}{v}
 $$
 
 Em que:
-- $F$ força motriz [ $kN$ ]
-- $P$ a potência máxima do motor [ $hp$ ]
-- $v$ a velocidade do veículo [ $km/h$ ]
+- $F$ força motriz [kN]
+- $P$ a potência máxima do motor [hp]
+- $v$ a velocidade do veículo [km/h]
 
 $$
 F_{t} = 2,649 \cdot \frac{P}{v}
 $$
 
 Tal que:
-- $F$ força motriz [ $kN$ ]
-- $P$ a potência máxima do motor [ $cv$ ]
-- $v$ a velocidade do veículo [ $km/h$ ]
+- $F$ força motriz [kN]
+- $P$ a potência máxima do motor [cv]
+- $v$ a velocidade do veículo [km/h]
 
 ### Eficiência de Transmissão
 
@@ -128,8 +128,8 @@ Ft_{max} \leq f \cdot T_{d}
 $$
 
 Em que:
-- $Ft_{max}$ é a força motriz máxima ou de aderência [ $kN$ ]
-- $T_{d}$ é o peso aderente [ $kN$ ]
+- $Ft_{max}$ é a força motriz máxima ou de aderência [kN]
+- $T_{d}$ é o peso aderente [kN]
 - $f$ é o fator de aderência entre roda e trilho (adimensional)
 
 A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $f$ para várias condições do trilho.
