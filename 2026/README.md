@@ -83,7 +83,7 @@ Tal que:
 
 ### 1.1.4. Eficiência de Transmissão
 
-Em todo motor existem perdas resultante do atrito das peças, do sistema de transmissão, dos sistemas auxiliares (compressor, corrente, alternador, etc.). Portanto admitimos uma eficiência $\eta$, em locomotivas, em torno de **0,82**:
+Todo motor apresenta perdas resultante do atrito das peças, do sistema de transmissão, dos sistemas auxiliares (compressor, corrente, alternador, etc.). Portanto admitimos uma eficiência $\eta$, em locomotivas, em torno de **0,82**:
 
 $$
 F_{t} = \eta \cdot 3,6 \cdot \frac{P}{v}
@@ -149,7 +149,7 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 ---
 
 > [!IMPORTANT]
-> **A Força Tratora útil disponível é dada por**:
+> **A Força Tratora disponível é dada por**:
 > 
 > $$ F_t^{disp} = min(Ft_{CE}; Ft_{max}; Ft)$$
 > 
@@ -158,7 +158,7 @@ A tabela a seguir[^1] descreve valores típicos do *coeficiente de aderência* $
 > [!note]
 > **EXEMPLO: Força Tratora**
 > 
-> Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e um fator de aderência $f$ de 0,20, portanto:
+> Considere uma locomotiva com Massa Bruta Total ($G_{loc}$) de 100 toneladas – como todos os eixos são tratores, o peso aderente será $T_d = G_{loc} \cdot g$, em que $g$ é aceleração da gravidade – e adotando um fator de aderência $f$ de 0,20, portanto:
 > 
 > $$ Ft_{max} = f \cdot T_{d} \rightarrow 0,20 \cdot (100 \cdot 10) $$
 > $$ Ft_{max} = 200~kN $$
@@ -181,11 +181,11 @@ Sendo,
 - $R_c$ : resistência de curva [kN]
 
 > [!IMPORTANT]
-> Dentre todas as parcelas, as resistências **ao rolamento e aerodinâmica** sempre existirão, o que denominamos de ***Resistência Básica*** ou ***Resistência Inerente***.
+> Dentre essas componentes, as resistências **ao rolamento e aerodinâmica** estão sempre presente, portanto na literatura elas são denominadas de ***Resistência Básica*** ou ***Resistência Inerente***.
 
 ### 1.2.1. Resistência ao Rolamento
 
-Segundo o modelo proposto por Davis (1910):
+Dentre os modelos descritos na literatura, Davis (1910) propõe a seguinte equação:
 
 $$
 R_r = \left( c_1 + \frac{c_2 \cdot x}{G} + c_3 \cdot V \right) \cdot \frac{G}{1000}
